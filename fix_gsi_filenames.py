@@ -25,7 +25,7 @@ def dprint(msg):
     """iff debug == true, print info"""
     if DEBUG:
         print(f"[DEBUG] {msg}")
-## end dprint
+# end dprint
 #-------------------------------------------------------
 
 
@@ -174,5 +174,5 @@ def main():
 if __name__ == "__main__":
     main()
 
-### end fix_gsi_filenames.py
+# end fix_gsi_filenames.py
 #-------------------------------------------------------
