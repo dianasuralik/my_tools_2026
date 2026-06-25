@@ -176,3 +176,5 @@ if __name__ == "__main__":
 
 # end add_nc_symlinks_to_gsi.py
 #-------------------------------------------------------
+
+# ran successfully debug mode 06/25/2026
