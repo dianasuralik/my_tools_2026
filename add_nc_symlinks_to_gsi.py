@@ -3,9 +3,9 @@
 
 """
 Generic script extracts tar, creates .nc symlinks pointing to .gsi.nc files, rebuilds tar, and writes the result to a specified output directory. 
-The original archive is not changed. v3
+original archive not changed. v3
 """
-
+#-------------------------------------------------------
 #!/usr/bin/env python3
 
 ### imports
