@@ -1,5 +1,5 @@
 #-------------------------------------------------------
-### start fix_gsi_filenames.py
+### start add_nc_symlinks_to_gsi.py
 
 """
 Generic script extracts tar, creates .nc symlinks pointing to .gsi.nc files, rebuilds tar, and writes the result to a specified output directory. 
@@ -174,5 +174,5 @@ def main():
 if __name__ == "__main__":
     main()
 
-# end fix_gsi_filenames.py
+# end add_nc_symlinks_to_gsi.py
 #-------------------------------------------------------
