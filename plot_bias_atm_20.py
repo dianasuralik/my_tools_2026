@@ -16,7 +16,7 @@
  * @return Generates high-resolution PNG diagnostic charts locally.
  *
  * @requires xarray (xr)
- * @requires numpy (np)
+ * @requires numpy (np) 
  * @requires matplotlib.pyplot (plt)
 """
 
