@@ -17,19 +17,31 @@
 
 import os
 import sys  
+import argparse
 import xarray as xr
 import matplotlib.pyplot as plt
 
 # ==========================================
-# 1. Command-Line Argument Verification
+# 1. Command-Line Argument Parsing
 # ==========================================
-if len(sys.argv) < 2:
-    print("Error: Provide the absolute path to the netCDF file.")
-    print("Usage: python plot_by_chan.py /path/to/your/file.nc4")
-    sys.exit(1)
-nc_file = sys.argv[1]  
-file_name_only = os.path.basename(nc_file)
+parser = argparse.ArgumentParser(
+    description="Spatial visualization tool for satellite radiance data by channel index."
+)
+parser.add_argument(
+    "filepath", 
+    type=str, 
+    help="Absolute path to the target netCDF (.nc or .nc4) data file."
+)
+parser.add_argument(
+    "-d", "--debug", 
+    action="store_true", 
+    help="Enable verbose debugging statements and show inline plots."
+)
 
+args = parser.parse_args()
+
+nc_file = args.filepath
+file_name_only = os.path.basename(nc_file)
 # ==========================================
 # 2. Environment & Directory Setup
 # ==========================================
