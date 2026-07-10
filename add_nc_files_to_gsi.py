@@ -1,9 +1,10 @@
+
 #-------------------------------------------------------
-### start add_nc_symlinks_to_gsi.py
+### start add_nc_files_to_gsi.py
 
 """
-Generic script extracts tar, creates .nc symlinks pointing to .gsi.nc files, rebuilds tar, and writes the result to a specified output directory. 
-original archive not changed. v3
+Generic script extracts tar, creates physical .nc and .txt copies pointing to .gsi.nc and .gsi.txt files, rebuilds tar, and writes the result to a specified output directory. 
+original archive not changed. v4
 """
 #-------------------------------------------------------
 #!/usr/bin/env python3
@@ -34,12 +35,12 @@ def dprint(msg):
 #------------------------------------------------------
 def process_tar(tar_path, output_dir):
     """
-    Process a tar archive by creating symbolic links (*.nc -> *.gsi.nc)
+    Process a tar archive by creating physical copies (*.nc <- *.gsi.nc and *.txt <- *.gsi.txt)
     and writing a new archive to the output directory.
     """
     tar_path = Path(tar_path).resolve()
     output_dir = Path(output_dir).resolve()
-    
+
     # file not found error
     if not tar_path.exists():
         raise FileNotFoundError(f"Tar file not found: {tar_path}")
@@ -65,33 +66,45 @@ def process_tar(tar_path, output_dir):
                 return
             dprint("Extraction complete")
             # ------------------------------------------------------------
-            # 2: Create symlinks (*.nc -> *.gsi.nc)
+            # 2: Create physical copies (*.nc <- *.gsi.nc and *.txt <- *.gsi.txt)
             # ------------------------------------------------------------
-            print("Creating symbolic links...")
-            link_count = 0
+            print("Creating physical file copies...")
+            copy_count = 0
             for root, _, files in os.walk(extract_dir):
                 root = Path(root)
                 dprint(f"Scanning directory: {root}")
                 for filename in files:
                     if filename.endswith(".gsi.nc"):
                         gsi_file = root / filename
-                        nc_link = root / filename.replace(".gsi.nc", ".nc")
+                        nc_file = root / filename.replace(".gsi.nc", ".nc")
                         dprint(f"Found GSI file: {gsi_file}")
                         try:
-                            if nc_link.exists() or nc_link.is_symlink():
-                                nc_link.unlink()
-                                dprint(f"Removed existing link: {nc_link}")
-                            nc_link.symlink_to(gsi_file.name)
-                            print(f"Link: {nc_link} -> {gsi_file.name}")
-                            link_count += 1
+                            if nc_file.exists() or nc_file.is_symlink():
+                                nc_file.unlink()
+                                dprint(f"Removed existing file/link: {nc_file}")
+                            shutil.copy2(gsi_file, nc_file)
+                            print(f"Copy: {nc_file.name} <- {gsi_file.name}")
+                            copy_count += 1
                         except Exception as e:
-                            print(f"[ERROR] Failed to create symlink for {gsi_file}: {e}")
-                        ## end try
-                    ## end if
+                            print(f"[ERROR] Failed to copy file for {gsi_file}: {e}")
+                    
+                    elif filename.endswith(".gsi.txt"):
+                        gsi_file = root / filename
+                        txt_file = root / filename.replace(".gsi.txt", ".txt")
+                        dprint(f"Found GSI file: {gsi_file}")
+                        try:
+                            if txt_file.exists() or txt_file.is_symlink():
+                                txt_file.unlink()
+                                dprint(f"Removed existing file/link: {txt_file}")
+                            shutil.copy2(gsi_file, txt_file)
+                            print(f"Copy: {txt_file.name} <- {gsi_file.name}")
+                            copy_count += 1
+                        except Exception as e:
+                            print(f"[ERROR] Failed to copy file for {gsi_file}: {e}")
                 # end for loop
             # end for loop
-            print(f"Created {link_count} symbolic link(s)")
-            dprint("Symlink creation finished")
+            print(f"Created {copy_count} physical file copy/copies")
+            dprint("File copying finished")
             # ------------------------------------------------------------
             # 3: Repack archive
             # ------------------------------------------------------------
@@ -146,13 +159,13 @@ def main():
 
     # Create command-line argument parser to handle user inputs
     parser = argparse.ArgumentParser(
-        description="Process tar files and create .nc symlinks for .gsi.nc files"
+        description="Process tar files and create physical .nc and .txt copies for .gsi files"
     )
     # Positional argument: input tar archive path
     # Positional argument: output directory where new tar will be written
     parser.add_argument("tar_file")
     parser.add_argument("output_dir")
-    
+
     # debug flag
     # Optional flag:
     # If --debug is present → args.debug = True
@@ -174,7 +187,6 @@ def main():
 if __name__ == "__main__":
     main()
 
-# end add_nc_symlinks_to_gsi.py
+# end add_nc_files_to_gsi.py
 #-------------------------------------------------------
 
-# ran successfully debug mode 06/25/2026

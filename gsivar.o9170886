@@ -1,0 +1,3580 @@
++ date
+Fri Jun 26 08:13:25 CDT 2026
++ ntasks=160
++ ppn=16
++ threads=5
++ export NODES=10
++ NODES=10
++ npe_node_max=80
++ npe_gsi=160
++ HOMEgsi=/work2/noaa/da/rtreadon/git/gsi/hercules/develop
++ module purge
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ module use /work2/noaa/da/rtreadon/git/gsi/hercules/develop/modulefiles
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ module load gsi_hercules.intel
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ module list
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+
+Currently Loaded Modules:
+  1) intel-oneapi-compilers/2024.2.1  22) w3emc/2.10.0
+  2) stack-oneapi/2024.2.1            23) ip/5.1.0
+  3) intel-oneapi-runtime/2024.2.1    24) sigio/2.3.3
+  4) stack-intel-oneapi-mpi/2021.13   25) sfcio/1.4.2
+  5) intel-oneapi-mkl/2024.2.1        26) nemsio/2.5.4
+  6) gettext/0.21                     27) wrf-io/1.2.0
+  7) glibc/2.34                       28) ncio/1.1.2
+  8) zlib/1.2.13                      29) crtm-fix/2.4.0.1_emc
+  9) sqlite/3.46.0                    30) git-lfs/3.1.2
+ 10) util-linux-uuid/2.40.2           31) crtm/2.4.0.1
+ 11) python/3.11.7                    32) gsi-ncdiag/1.1.2
+ 12) stack-python/3.11.7              33) gsi_common
+ 13) nghttp2/1.63.0                   34) intel-oneapi-mpi/2021.7.1
+ 14) curl/8.10.1                      35) bzip2/1.0.8
+ 15) cmake/3.27.9                     36) libiconv/1.16
+ 16) netcdf-fortran/4.6.1             37) pigz/2.7
+ 17) openblas/0.3.24                  38) xz/5.2.7
+ 18) python-venv/1.0                  39) zstd/1.5.2
+ 19) py-numpy/1.26.4                  40) tar/1.34
+ 20) bufr/12.1.0                      41) gsi_hercules.intel
+ 21) bacio/2.4.1                      42) netcdf-c/4.9.2
+
+Inactive Modules:
+  1) snappy/1.2.1   2) c-blosc/1.21.5   3) hdf5/1.14.3
+
+ 
+
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ export OMP_STACKSIZE=2G
++ OMP_STACKSIZE=2G
++ export OMP_NUM_THREADS=5
++ OMP_NUM_THREADS=5
++ unset I_MPI_EXTRA_FILESYSTEM
++ ulimit -s unlimited
++ adate=2026061000
++ exp=test.2026061000
++ use_emc_para=YES
++ DOHYBVAR=NO
++ DO4DENSVAR=NO
++ SMOOTH_ENKF=NO
++ USE_RADSTAT=NO
++ GENDIAG=YES
++ DIAG_SUFFIX=
++ CDATE=2026061000
++ DIAG_COMPRESS=YES
++ COMPRESS=gzip
++ UNCOMPRESS=gunzip
++ DIAG_TARBALL=YES
++ DIAG_DIR=./
++ CHGRP_CMD='chgrp rstprod'
++ DO_CALC_INCREMENT=NO
++ dumpobs=gdas
++ ENS_NUM_ANAL=40
++ gsiexec=/work2/noaa/da/rtreadon/git/gsi/hercules/develop/install/bin/gsi.x
++ catexec=/bin/ncdiag_cat_serial.x
++ export JCAP=192
++ JCAP=192
++ export JCAP_B=384
++ JCAP_B=384
++ export LEVS=127
++ LEVS=127
++ PTMP=/work/noaa/stmp
++ DATA=/work/noaa/stmp/dsuralik/tmp_gsi/test.2026061000
++ SAVDIR=/work/noaa/stmp/dsuralik/out_gsi/test.2026061000
++ fixgsi=/work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix
++ fixcrtm=/work2/noaa/global/role-global/fix/crtm/v2.4.0.2
++ CLEAN=NO
++ export wc=/usr/bin/wc
++ wc=/usr/bin/wc
++ ncpc=/bin/cp
++ ncpl='ln -fs'
++ NLN='ln -fs'
++ [[ 192 = \1\5\3\4 ]]
++ [[ 192 = \1\1\4\8 ]]
++ [[ 192 = \8\7\8 ]]
++ [[ 192 = \7\6\6 ]]
++ [[ 192 = \5\7\4 ]]
++ [[ 192 = \3\8\4 ]]
++ [[ 192 = \3\8\2 ]]
++ [[ 192 = \1\9\2 ]]
++ export LONA=768
++ LONA=768
++ export LATA=384
++ LATA=384
++ export DELTIM=450
++ DELTIM=450
++ export NLON=768
++ NLON=768
++ export NLAT=386
++ NLAT=386
+++ echo 2026061000
+++ cut -c1-8
++ PDYa=20260610
+++ echo 2026061000
+++ cut -c9-10
++ cyca=00
+++ date +%Y%m%d%H -d '20260610 00 - 6 hours'
++ gdate=2026060918
+++ echo 2026060918
+++ cut -c1-8
++ PDYg=20260609
+++ echo 2026060918
+++ cut -c9-10
++ cycg=18
++ PDY=20260610
++ cyc=00
++ prefix_obs=gdas.t00z
++ prefix_ges=gdas.t18z
++ prefix_ens=enkfgdas.t18z
++ suffix=tm00.bufr_d
++ dumpges=gdas
++ dumpanl=gdas
++ [[ YES = \Y\E\S ]]
++ COMROOT=/work/noaa/stmp/rtreadon/COMROOT/prgsi
++ datobs=/work/noaa/stmp/rtreadon/COMROOT/prgsi/gdas.20260610/00/obs
++ datges=/work/noaa/stmp/rtreadon/COMROOT/prgsi/gdas.20260609/18/model/atmos/history
++ datbc=/work/noaa/stmp/rtreadon/COMROOT/prgsi/gdas.20260609/18/analysis/atmos
++ datanl=/work/noaa/stmp/rtreadon/COMROOT/prgsi/
++ datens=/work/noaa/stmp/rtreadon/COMROOT/prgsi/enkfgdas.20260609/18
++ rm -rf /work/noaa/stmp/dsuralik/tmp_gsi/test.2026061000
++ mkdir -p /work/noaa/stmp/dsuralik/tmp_gsi/test.2026061000
++ cd /work/noaa/stmp/dsuralik/tmp_gsi/test.2026061000
++ rm -rf 'core*'
++ ICO2=0
++ '[' 0 -gt 0 ']'
++ SETUP=
++ GRIDOPTS=
++ BKGERR=
++ ANBKGERR=
++ JCOPTS=
++ STRONGOPTS=
++ OBSQC=
++ OBSINPUT=
++ SUPERRAD=
++ LAGDATA=
++ HYBRIDENSEMBLE=
++ RR_CLDSURF=
++ CHEM=
++ SINGLEOB=
++ NSST=
++ DO_CALC_INCREMENT=NO
++ DO_CALC_ANALYSIS=NO
++ INCREMENTS_TO_ZERO=''\''NONE'\'''
++ INCVARS_ZERO_STRAT=''\''NONE'\'''
++ incvars_efold=5
++ SETUP_INC=
++ '[' NO = YES ']'
++ write_fv3_increment=.true.
++ WRITE_INCR_ZERO='incvars_to_zero= '\''NONE'\'''
++ WRITE_INCR_ZERO_STRAT=incvars_zero_strat=
++ incvars_efold=5
++ SETUP_INC='write_fv3_incr=.true.,incvars_to_zero= '\''NONE'\'',incvars_zero_strat=,incvars_efold=5,'
++ nhr_obsbin=3
++ [[ NO = \N\O ]]
++ STRONGOPTS=tlnmc_option=1,
++ JCOPTS_4DVAR=
++ HYBRIDENSEMBLE_TEST=
++ [[ NO = \Y\E\S ]]
++ [[ 3 = \1 ]]
++ SETUPGFS=
++ [[ gdas = \g\f\s ]]
++ SETUP_NSST=tzr_qc=1,sfcnst_comb=.true.,
++ NSST=nst_gsi=3,nstinfo=4,zsea1=0,zsea2=0,fac_dtl=1,fac_tsl=1,
++ SETUP_4DVAR=
++ STRONGOPTS_4DVAR=
++ [[ NO = \Y\E\S ]]
++ export verbose=.false.
++ verbose=.false.
++ export imp_physics=8
++ imp_physics=8
++ export imp_physics=8
++ imp_physics=8
++ export lupp=.true.
++ lupp=.true.
++ export lrun_subdirs=.true.
++ lrun_subdirs=.true.
++ export subdirs_path=./
++ subdirs_path=./
++ export use_readin_anl_sfcmask=.true.
++ use_readin_anl_sfcmask=.true.
++ export use_readin_anl_sfcmask=.true.
++ use_readin_anl_sfcmask=.true.
++ export use_gfs_ncio=.true.
++ use_gfs_ncio=.true.
++ export use_gfs_nemsio=.false.
++ use_gfs_nemsio=.false.
++ export use_gfs_ncio=.true.
++ use_gfs_ncio=.true.
++ export netcdf_diag=.true.
++ netcdf_diag=.true.
++ export binary_diag=.false.
++ binary_diag=.false.
++ export netcdf_diag=.true.
++ netcdf_diag=.true.
++ export nvqc=.true.
++ nvqc=.true.
++ export nvqc=.true.
++ nvqc=.true.
++ export vqc=.false.
++ vqc=.false.
++ export hub_norm=.true.
++ hub_norm=.true.
++ export hub_norm=.true.
++ hub_norm=.true.
++ export qc_noirjaco3_pole=.false.
++ qc_noirjaco3_pole=.false.
++ export lobsdiag_forenkf=.false.
++ lobsdiag_forenkf=.false.
++ export nhr_anal=6
++ nhr_anal=6
++ cnvw_option=.false.
++ cao_check=.true.
++ export ta2tb=.true.
++ ta2tb=.true.
++ crtm_coeffs=./crtm_coeffs/
++ export crtm_coeffs=./crtm_coeffs/
++ crtm_coeffs=./crtm_coeffs/
++ export cwoption=3
++ cwoption=3
++ cwcoveqqcov=.false.
++ cwcoveqqcov=.false.
++ hofx_2m_sfcfile=.false.
++ hofx_2m_sfcfile=.false.
++ export qoption=2
++ qoption=2
++ export factqmin=0.5
++ factqmin=0.5
++ export factqmax=0.0002
++ factqmax=0.0002
++ export optconv=0.06
++ optconv=0.06
++ export AIRS_CADS=.false.
++ AIRS_CADS=.false.
++ export IASI_CADS=.false.
++ IASI_CADS=.false.
++ export CRIS_CADS=.false.
++ CRIS_CADS=.false.
++ '[' .true. = .true. ']'
++ DIAG_SUFFIX=.nc4
++ '[' .true. = .true. ']'
++ vqc=.false.
++ '[' .false. = .true. ']'
++ format=nemsio
++ SETUP_NCIO=
++ '[' .true. = .true. ']'
++ format=nc
++ SETUP_NCIO=use_gfs_ncio=.true.,
++ SETUP_TEST=
++ BKGERR_TEST=
++ JCOPTS_TEST=
++ STRONGOPTS_TEST=
++ OBSQC_TEST=
++ export 'SETUP_TEST=miter=1,niter(1)=50,factqmin=0.0,factqmax=0.0,write_diag(2)=.true.,thin4d=.false.,l4densvar=.false.,lwrite4danl=.false.,nhr_obsbin=3,'
++ SETUP_TEST='miter=1,niter(1)=50,factqmin=0.0,factqmax=0.0,write_diag(2)=.true.,thin4d=.false.,l4densvar=.false.,lwrite4danl=.false.,nhr_obsbin=3,'
++ export BKGERR_TEST=bkgv_flowdep=.false.,
++ BKGERR_TEST=bkgv_flowdep=.false.,
++ export JCOPTS_TEST=ljcpdry=.false.,bamp_jcpdry=0.0,ljc4tlevs=.false.,
++ JCOPTS_TEST=ljcpdry=.false.,bamp_jcpdry=0.0,ljc4tlevs=.false.,
++ export STRONGOPTS_TEST=tlnmc_option=0,
++ STRONGOPTS_TEST=tlnmc_option=0,
++ export OBSQC_TEST=aircraft_t_bc=.false.,upd_aircraft=.false.,cleanup_tail=.false.,noiqc=.false.,nvqc=.false.,hub_norm=.false.,
++ OBSQC_TEST=aircraft_t_bc=.false.,upd_aircraft=.false.,cleanup_tail=.false.,noiqc=.false.,nvqc=.false.,hub_norm=.false.,
++ write_fv3_increment=.true.
++ INCREMENTS_TO_ZERO=''\''NONE'\'','\''NONE'\'','\''NONE'\'','\''NONE'\'','\''NONE'\'''
++ WRITE_INCR_ZERO='incvars_to_zero= '\''NONE'\'','\''NONE'\'','\''NONE'\'','\''NONE'\'','\''NONE'\'''
++ INCREMENTS_TO_ZERO_STRAT=''\''NONE'\'','\''NONE'\'','\''NONE'\'','\''NONE'\'','\''NONE'\'','\''NONE'\'''
++ WRITE_INCR_ZERO_STRAT='incvars_zero_strat='\''NONE'\'','\''NONE'\'','\''NONE'\'','\''NONE'\'','\''NONE'\'','\''NONE'\'''
++ incvars_efold=5
++ SETUP_INC='write_fv3_incr=.true.,incvars_to_zero= '\''NONE'\'','\''NONE'\'','\''NONE'\'','\''NONE'\'','\''NONE'\'',incvars_zero_strat='\''NONE'\'','\''NONE'\'','\''NONE'\'','\''NONE'\'','\''NONE'\'','\''NONE'\'',incvars_efold=5,'
++ SETUP=' tzr_qc=1,sfcnst_comb=.true.,  write_fv3_incr=.true.,incvars_to_zero= '\''NONE'\'','\''NONE'\'','\''NONE'\'','\''NONE'\'','\''NONE'\'',incvars_zero_strat='\''NONE'\'','\''NONE'\'','\''NONE'\'','\''NONE'\'','\''NONE'\'','\''NONE'\'',incvars_efold=5, use_gfs_ncio=.true., miter=1,niter(1)=50,factqmin=0.0,factqmax=0.0,write_diag(2)=.true.,thin4d=.false.,l4densvar=.false.,lwrite4danl=.false.,nhr_obsbin=3,'
++ BKGERR=bkgv_flowdep=.false.,
++ JCOPTS=' ljcpdry=.false.,bamp_jcpdry=0.0,ljc4tlevs=.false.,'
++ STRONGOPTS=' tlnmc_option=0,'
++ OBSQC=' aircraft_t_bc=.false.,upd_aircraft=.false.,cleanup_tail=.false.,noiqc=.false.,nvqc=.false.,hub_norm=.false.,'
++ anavinfo=/work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/global_anavinfo.l127.txt
++ berror=/work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/global_berror.l127y386.nc
++ locinfo=/work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/global_hybens_info.l127.txt
++ satinfo=/work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/global_satinfo.txt
++ scaninfo=/work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/global_scaninfo.txt
++ satangl=/work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/global_satangbias.txt
++ pcpinfo=/work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/global_pcpinfo.txt
++ ozinfo=/work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/global_ozinfo.txt
++ convinfo=/work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/global_convinfo.txt
++ vqcdat=/work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/vqctp001.dat
++ insituinfo=/work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/global_insituinfo.txt
++ errtable=/work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/prepobs_errtable.global
++ blacklst=/work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/rejectlist_global.txt
++ aeroinfo=/work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/global_aeroinfo.txt
++ atmsbeaminfo=/work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/atms_beamwidth.txt
++ cloudyinfo=/work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/cloudy_radiance_info.txt
++ airsclddet=/work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/AIRS_CLDDET.NL
++ crisclddet=/work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/CRIS_CLDDET.NL
++ iasiclddet=/work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/IASI_CLDDET.NL
++ emiscoef_IRwater=/work2/noaa/global/role-global/fix/crtm/v2.4.0.2/Nalli.IRwater.EmisCoeff.bin
++ emiscoef_IRice=/work2/noaa/global/role-global/fix/crtm/v2.4.0.2/NPOESS.IRice.EmisCoeff.bin
++ emiscoef_IRland=/work2/noaa/global/role-global/fix/crtm/v2.4.0.2/NPOESS.IRland.EmisCoeff.bin
++ emiscoef_IRsnow=/work2/noaa/global/role-global/fix/crtm/v2.4.0.2/NPOESS.IRsnow.EmisCoeff.bin
++ emiscoef_VISice=/work2/noaa/global/role-global/fix/crtm/v2.4.0.2/NPOESS.VISice.EmisCoeff.bin
++ emiscoef_VISland=/work2/noaa/global/role-global/fix/crtm/v2.4.0.2/NPOESS.VISland.EmisCoeff.bin
++ emiscoef_VISsnow=/work2/noaa/global/role-global/fix/crtm/v2.4.0.2/NPOESS.VISsnow.EmisCoeff.bin
++ emiscoef_VISwater=/work2/noaa/global/role-global/fix/crtm/v2.4.0.2/NPOESS.VISwater.EmisCoeff.bin
++ emiscoef_MWwater=/work2/noaa/global/role-global/fix/crtm/v2.4.0.2/FASTEM6.MWwater.EmisCoeff.bin
++ aercoef=/work2/noaa/global/role-global/fix/crtm/v2.4.0.2/AerosolCoeff.bin
++ ((  imp_physics == 8  ))
++ cldcoef=/work2/noaa/global/role-global/fix/crtm/v2.4.0.2/CloudCoeff.Thompson08.-109z-1.bin
++ bufrtable=/work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/prepobs_prep.bufrtable
++ bftab_sst=/work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/bufrtab.012
++ rm -f gsiparm.anl
++ cat
++ /bin/cp /work2/noaa/da/rtreadon/git/gsi/hercules/develop/install/bin/gsi.x ./gsi.x
++ /bin/cp /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/global_anavinfo.l127.txt ./anavinfo
++ /bin/cp /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/global_berror.l127y386.nc ./berror_stats
++ /bin/cp /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/global_hybens_info.l127.txt ./hybens_info
++ /bin/cp /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/global_satinfo.txt ./satinfo
++ /bin/cp /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/global_scaninfo.txt ./scaninfo
++ /bin/cp /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/global_pcpinfo.txt ./pcpinfo
++ /bin/cp /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/global_ozinfo.txt ./ozinfo
++ /bin/cp /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/global_convinfo.txt ./convinfo
++ /bin/cp /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/vqctp001.dat ./vqctp001.dat
++ /bin/cp /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/global_insituinfo.txt ./insituinfo
++ /bin/cp /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/prepobs_errtable.global ./errtable
++ /bin/cp /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/rejectlist_global.txt ./blacklist
++ /bin/cp /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/global_aeroinfo.txt ./aeroinfo
++ /bin/cp /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/atms_beamwidth.txt ./atms_beamwidth.txt
++ /bin/cp /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/cloudy_radiance_info.txt ./cloudy_radiance_info.txt
++ /bin/cp /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/prepobs_prep.bufrtable ./prepobs_prep.bufrtable
++ /bin/cp /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/bufrtab.012 ./bftab_sstphr
++ /bin/cp /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/AIRS_CLDDET.NL ./AIRS_CLDDET.NL
++ /bin/cp /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/CRIS_CLDDET.NL ./CRIS_CLDDET.NL
++ /bin/cp /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/IASI_CLDDET.NL ./IASI_CLDDET.NL
++ grep -q Rcov /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/global_anavinfo.l127.txt
++ ls /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/Rcov_crisn20 /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/Rcov_crisn21 /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/Rcov_crisnpp /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/Rcov_iasialand /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/Rcov_iasiasea /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/Rcov_iasibland /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/Rcov_iasibsea /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/Rcov_iasicland /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/Rcov_iasicsea
++ /bin/cp /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/Rcov_crisn20 /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/Rcov_crisn21 /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/Rcov_crisnpp /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/Rcov_iasialand /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/Rcov_iasiasea /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/Rcov_iasibland /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/Rcov_iasibsea /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/Rcov_iasicland /work2/noaa/da/rtreadon/git/gsi/hercules/develop/fix/Rcov_iasicsea /work/noaa/stmp/dsuralik/tmp_gsi/test.2026061000
++ export MKL_NUM_THREADS=1
++ MKL_NUM_THREADS=1
++ '[' ./ '!=' ./ ']'
++ mkdir -p ./crtm_coeffs/
+++ awk '{if($1!~"!"){print $1}}' satinfo
+++ sort
+++ uniq
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/abi_g16.SpcCoeff.bin ./crtm_coeffs//abi_g16.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/abi_g16.TauCoeff.bin ./crtm_coeffs//abi_g16.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/abi_g17.SpcCoeff.bin ./crtm_coeffs//abi_g17.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/abi_g17.TauCoeff.bin ./crtm_coeffs//abi_g17.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/abi_g18.SpcCoeff.bin ./crtm_coeffs//abi_g18.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/abi_g18.TauCoeff.bin ./crtm_coeffs//abi_g18.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/abi_g19.SpcCoeff.bin ./crtm_coeffs//abi_g19.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/abi_g19.TauCoeff.bin ./crtm_coeffs//abi_g19.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/ahi_himawari8.SpcCoeff.bin ./crtm_coeffs//ahi_himawari8.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/ahi_himawari8.TauCoeff.bin ./crtm_coeffs//ahi_himawari8.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/ahi_himawari9.SpcCoeff.bin ./crtm_coeffs//ahi_himawari9.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/ahi_himawari9.TauCoeff.bin ./crtm_coeffs//ahi_himawari9.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/airs_aqua.SpcCoeff.bin ./crtm_coeffs//airs_aqua.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/airs_aqua.TauCoeff.bin ./crtm_coeffs//airs_aqua.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/amsr2_gcom-w1.SpcCoeff.bin ./crtm_coeffs//amsr2_gcom-w1.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/amsr2_gcom-w1.TauCoeff.bin ./crtm_coeffs//amsr2_gcom-w1.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/amsre_aqua.SpcCoeff.bin ./crtm_coeffs//amsre_aqua.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/amsre_aqua.TauCoeff.bin ./crtm_coeffs//amsre_aqua.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/amsua_aqua.SpcCoeff.bin ./crtm_coeffs//amsua_aqua.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/amsua_aqua.TauCoeff.bin ./crtm_coeffs//amsua_aqua.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/amsua_metop-a.SpcCoeff.bin ./crtm_coeffs//amsua_metop-a.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/amsua_metop-a.TauCoeff.bin ./crtm_coeffs//amsua_metop-a.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/amsua_metop-b.SpcCoeff.bin ./crtm_coeffs//amsua_metop-b.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/amsua_metop-b.TauCoeff.bin ./crtm_coeffs//amsua_metop-b.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/amsua_metop-c.SpcCoeff.bin ./crtm_coeffs//amsua_metop-c.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/amsua_metop-c.TauCoeff.bin ./crtm_coeffs//amsua_metop-c.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/amsua_n15.SpcCoeff.bin ./crtm_coeffs//amsua_n15.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/amsua_n15.TauCoeff.bin ./crtm_coeffs//amsua_n15.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/amsua_n18.SpcCoeff.bin ./crtm_coeffs//amsua_n18.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/amsua_n18.TauCoeff.bin ./crtm_coeffs//amsua_n18.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/amsua_n19.SpcCoeff.bin ./crtm_coeffs//amsua_n19.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/amsua_n19.TauCoeff.bin ./crtm_coeffs//amsua_n19.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/amsub_n17.SpcCoeff.bin ./crtm_coeffs//amsub_n17.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/amsub_n17.TauCoeff.bin ./crtm_coeffs//amsub_n17.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/atms_n20.SpcCoeff.bin ./crtm_coeffs//atms_n20.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/atms_n20.TauCoeff.bin ./crtm_coeffs//atms_n20.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/atms_n21.SpcCoeff.bin ./crtm_coeffs//atms_n21.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/atms_n21.TauCoeff.bin ./crtm_coeffs//atms_n21.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/atms_npp.SpcCoeff.bin ./crtm_coeffs//atms_npp.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/atms_npp.TauCoeff.bin ./crtm_coeffs//atms_npp.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/avhrr3_metop-a.SpcCoeff.bin ./crtm_coeffs//avhrr3_metop-a.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/avhrr3_metop-a.TauCoeff.bin ./crtm_coeffs//avhrr3_metop-a.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/avhrr3_metop-b.SpcCoeff.bin ./crtm_coeffs//avhrr3_metop-b.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/avhrr3_metop-b.TauCoeff.bin ./crtm_coeffs//avhrr3_metop-b.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/avhrr3_metop-c.SpcCoeff.bin ./crtm_coeffs//avhrr3_metop-c.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/avhrr3_metop-c.TauCoeff.bin ./crtm_coeffs//avhrr3_metop-c.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/avhrr3_n18.SpcCoeff.bin ./crtm_coeffs//avhrr3_n18.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/avhrr3_n18.TauCoeff.bin ./crtm_coeffs//avhrr3_n18.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/avhrr3_n19.SpcCoeff.bin ./crtm_coeffs//avhrr3_n19.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/avhrr3_n19.TauCoeff.bin ./crtm_coeffs//avhrr3_n19.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/cris-fsr_n20.SpcCoeff.bin ./crtm_coeffs//cris-fsr_n20.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/cris-fsr_n20.TauCoeff.bin ./crtm_coeffs//cris-fsr_n20.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/cris-fsr_n21.SpcCoeff.bin ./crtm_coeffs//cris-fsr_n21.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/cris-fsr_n21.TauCoeff.bin ./crtm_coeffs//cris-fsr_n21.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/cris-fsr_npp.SpcCoeff.bin ./crtm_coeffs//cris-fsr_npp.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/cris-fsr_npp.TauCoeff.bin ./crtm_coeffs//cris-fsr_npp.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/gmi_gpm.SpcCoeff.bin ./crtm_coeffs//gmi_gpm.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/gmi_gpm.TauCoeff.bin ./crtm_coeffs//gmi_gpm.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/hirs3_n17.SpcCoeff.bin ./crtm_coeffs//hirs3_n17.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/hirs3_n17.TauCoeff.bin ./crtm_coeffs//hirs3_n17.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/hirs4_metop-a.SpcCoeff.bin ./crtm_coeffs//hirs4_metop-a.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/hirs4_metop-a.TauCoeff.bin ./crtm_coeffs//hirs4_metop-a.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/hirs4_metop-b.SpcCoeff.bin ./crtm_coeffs//hirs4_metop-b.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/hirs4_metop-b.TauCoeff.bin ./crtm_coeffs//hirs4_metop-b.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/hirs4_n19.SpcCoeff.bin ./crtm_coeffs//hirs4_n19.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/hirs4_n19.TauCoeff.bin ./crtm_coeffs//hirs4_n19.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/iasi_metop-a.SpcCoeff.bin ./crtm_coeffs//iasi_metop-a.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/iasi_metop-a.TauCoeff.bin ./crtm_coeffs//iasi_metop-a.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/iasi_metop-b.SpcCoeff.bin ./crtm_coeffs//iasi_metop-b.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/iasi_metop-b.TauCoeff.bin ./crtm_coeffs//iasi_metop-b.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/iasi_metop-c.SpcCoeff.bin ./crtm_coeffs//iasi_metop-c.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/iasi_metop-c.TauCoeff.bin ./crtm_coeffs//iasi_metop-c.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/imgr_g11.SpcCoeff.bin ./crtm_coeffs//imgr_g11.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/imgr_g11.TauCoeff.bin ./crtm_coeffs//imgr_g11.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/imgr_g12.SpcCoeff.bin ./crtm_coeffs//imgr_g12.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/imgr_g12.TauCoeff.bin ./crtm_coeffs//imgr_g12.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/imgr_g13.SpcCoeff.bin ./crtm_coeffs//imgr_g13.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/imgr_g13.TauCoeff.bin ./crtm_coeffs//imgr_g13.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/imgr_g14.SpcCoeff.bin ./crtm_coeffs//imgr_g14.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/imgr_g14.TauCoeff.bin ./crtm_coeffs//imgr_g14.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/imgr_g15.SpcCoeff.bin ./crtm_coeffs//imgr_g15.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/imgr_g15.TauCoeff.bin ./crtm_coeffs//imgr_g15.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/mhs_metop-a.SpcCoeff.bin ./crtm_coeffs//mhs_metop-a.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/mhs_metop-a.TauCoeff.bin ./crtm_coeffs//mhs_metop-a.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/mhs_metop-b.SpcCoeff.bin ./crtm_coeffs//mhs_metop-b.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/mhs_metop-b.TauCoeff.bin ./crtm_coeffs//mhs_metop-b.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/mhs_metop-c.SpcCoeff.bin ./crtm_coeffs//mhs_metop-c.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/mhs_metop-c.TauCoeff.bin ./crtm_coeffs//mhs_metop-c.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/mhs_n18.SpcCoeff.bin ./crtm_coeffs//mhs_n18.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/mhs_n18.TauCoeff.bin ./crtm_coeffs//mhs_n18.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/mhs_n19.SpcCoeff.bin ./crtm_coeffs//mhs_n19.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/mhs_n19.TauCoeff.bin ./crtm_coeffs//mhs_n19.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/mws_metop-sg-a1.SpcCoeff.bin ./crtm_coeffs//mws_metop-sg-a1.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/mws_metop-sg-a1.TauCoeff.bin ./crtm_coeffs//mws_metop-sg-a1.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/saphir_meghat.SpcCoeff.bin ./crtm_coeffs//saphir_meghat.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/saphir_meghat.TauCoeff.bin ./crtm_coeffs//saphir_meghat.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/seviri_m08.SpcCoeff.bin ./crtm_coeffs//seviri_m08.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/seviri_m08.TauCoeff.bin ./crtm_coeffs//seviri_m08.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/seviri_m09.SpcCoeff.bin ./crtm_coeffs//seviri_m09.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/seviri_m09.TauCoeff.bin ./crtm_coeffs//seviri_m09.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/seviri_m10.SpcCoeff.bin ./crtm_coeffs//seviri_m10.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/seviri_m10.TauCoeff.bin ./crtm_coeffs//seviri_m10.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/seviri_m11.SpcCoeff.bin ./crtm_coeffs//seviri_m11.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/seviri_m11.TauCoeff.bin ./crtm_coeffs//seviri_m11.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD1_g11.SpcCoeff.bin ./crtm_coeffs//sndrD1_g11.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD1_g11.TauCoeff.bin ./crtm_coeffs//sndrD1_g11.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD1_g12.SpcCoeff.bin ./crtm_coeffs//sndrD1_g12.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD1_g12.TauCoeff.bin ./crtm_coeffs//sndrD1_g12.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD1_g13.SpcCoeff.bin ./crtm_coeffs//sndrD1_g13.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD1_g13.TauCoeff.bin ./crtm_coeffs//sndrD1_g13.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD1_g14.SpcCoeff.bin ./crtm_coeffs//sndrD1_g14.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD1_g14.TauCoeff.bin ./crtm_coeffs//sndrD1_g14.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD1_g15.SpcCoeff.bin ./crtm_coeffs//sndrD1_g15.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD1_g15.TauCoeff.bin ./crtm_coeffs//sndrD1_g15.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD2_g11.SpcCoeff.bin ./crtm_coeffs//sndrD2_g11.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD2_g11.TauCoeff.bin ./crtm_coeffs//sndrD2_g11.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD2_g12.SpcCoeff.bin ./crtm_coeffs//sndrD2_g12.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD2_g12.TauCoeff.bin ./crtm_coeffs//sndrD2_g12.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD2_g13.SpcCoeff.bin ./crtm_coeffs//sndrD2_g13.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD2_g13.TauCoeff.bin ./crtm_coeffs//sndrD2_g13.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD2_g14.SpcCoeff.bin ./crtm_coeffs//sndrD2_g14.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD2_g14.TauCoeff.bin ./crtm_coeffs//sndrD2_g14.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD2_g15.SpcCoeff.bin ./crtm_coeffs//sndrD2_g15.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD2_g15.TauCoeff.bin ./crtm_coeffs//sndrD2_g15.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD3_g11.SpcCoeff.bin ./crtm_coeffs//sndrD3_g11.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD3_g11.TauCoeff.bin ./crtm_coeffs//sndrD3_g11.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD3_g12.SpcCoeff.bin ./crtm_coeffs//sndrD3_g12.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD3_g12.TauCoeff.bin ./crtm_coeffs//sndrD3_g12.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD3_g13.SpcCoeff.bin ./crtm_coeffs//sndrD3_g13.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD3_g13.TauCoeff.bin ./crtm_coeffs//sndrD3_g13.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD3_g14.SpcCoeff.bin ./crtm_coeffs//sndrD3_g14.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD3_g14.TauCoeff.bin ./crtm_coeffs//sndrD3_g14.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD3_g15.SpcCoeff.bin ./crtm_coeffs//sndrD3_g15.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD3_g15.TauCoeff.bin ./crtm_coeffs//sndrD3_g15.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD4_g11.SpcCoeff.bin ./crtm_coeffs//sndrD4_g11.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD4_g11.TauCoeff.bin ./crtm_coeffs//sndrD4_g11.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD4_g12.SpcCoeff.bin ./crtm_coeffs//sndrD4_g12.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD4_g12.TauCoeff.bin ./crtm_coeffs//sndrD4_g12.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD4_g13.SpcCoeff.bin ./crtm_coeffs//sndrD4_g13.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD4_g13.TauCoeff.bin ./crtm_coeffs//sndrD4_g13.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD4_g14.SpcCoeff.bin ./crtm_coeffs//sndrD4_g14.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD4_g14.TauCoeff.bin ./crtm_coeffs//sndrD4_g14.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD4_g15.SpcCoeff.bin ./crtm_coeffs//sndrD4_g15.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/sndrD4_g15.TauCoeff.bin ./crtm_coeffs//sndrD4_g15.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/ssmi_f15.SpcCoeff.bin ./crtm_coeffs//ssmi_f15.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/ssmi_f15.TauCoeff.bin ./crtm_coeffs//ssmi_f15.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/ssmis_f16.SpcCoeff.bin ./crtm_coeffs//ssmis_f16.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/ssmis_f16.TauCoeff.bin ./crtm_coeffs//ssmis_f16.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/ssmis_f17.SpcCoeff.bin ./crtm_coeffs//ssmis_f17.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/ssmis_f17.TauCoeff.bin ./crtm_coeffs//ssmis_f17.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/ssmis_f18.SpcCoeff.bin ./crtm_coeffs//ssmis_f18.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/ssmis_f18.TauCoeff.bin ./crtm_coeffs//ssmis_f18.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/ssmis_f19.SpcCoeff.bin ./crtm_coeffs//ssmis_f19.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/ssmis_f19.TauCoeff.bin ./crtm_coeffs//ssmis_f19.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/ssmis_f20.SpcCoeff.bin ./crtm_coeffs//ssmis_f20.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/ssmis_f20.TauCoeff.bin ./crtm_coeffs//ssmis_f20.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/viirs-m_j1.SpcCoeff.bin ./crtm_coeffs//viirs-m_j1.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/viirs-m_j1.TauCoeff.bin ./crtm_coeffs//viirs-m_j1.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/viirs-m_j2.SpcCoeff.bin ./crtm_coeffs//viirs-m_j2.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/viirs-m_j2.TauCoeff.bin ./crtm_coeffs//viirs-m_j2.TauCoeff.bin
++ for file in `awk '{if($1!~"!"){print $1}}' satinfo | sort | uniq`
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/viirs-m_npp.SpcCoeff.bin ./crtm_coeffs//viirs-m_npp.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/viirs-m_npp.TauCoeff.bin ./crtm_coeffs//viirs-m_npp.TauCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/amsua_metop-a_v2.SpcCoeff.bin ./crtm_coeffs//amsua_metop-a_v2.SpcCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/Nalli.IRwater.EmisCoeff.bin ./crtm_coeffs//Nalli.IRwater.EmisCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/NPOESS.IRice.EmisCoeff.bin ./crtm_coeffs//NPOESS.IRice.EmisCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/NPOESS.IRsnow.EmisCoeff.bin ./crtm_coeffs//NPOESS.IRsnow.EmisCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/NPOESS.IRland.EmisCoeff.bin ./crtm_coeffs//NPOESS.IRland.EmisCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/NPOESS.VISice.EmisCoeff.bin ./crtm_coeffs//NPOESS.VISice.EmisCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/NPOESS.VISland.EmisCoeff.bin ./crtm_coeffs//NPOESS.VISland.EmisCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/NPOESS.VISsnow.EmisCoeff.bin ./crtm_coeffs//NPOESS.VISsnow.EmisCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/NPOESS.VISwater.EmisCoeff.bin ./crtm_coeffs//NPOESS.VISwater.EmisCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/FASTEM6.MWwater.EmisCoeff.bin ./crtm_coeffs//FASTEM6.MWwater.EmisCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/AerosolCoeff.bin ./crtm_coeffs//AerosolCoeff.bin
++ ln -fs /work2/noaa/global/role-global/fix/crtm/v2.4.0.2/CloudCoeff.Thompson08.-109z-1.bin ./crtm_coeffs//CloudCoeff.bin
++ ln -fs /work/noaa/stmp/rtreadon/COMROOT/prgsi/gdas.20260610/00/obs/gdas.t00z.atms.tm00.bufr_d ./atmsbufr
++ ln -fs /work/noaa/stmp/rtreadon/COMROOT/prgsi/gdas.20260609/18/analysis/atmos/gdas.t18z.abias.txt ./satbias_in
++ ln -fs /work/noaa/stmp/rtreadon/COMROOT/prgsi/gdas.20260609/18/analysis/atmos/gdas.t18z.abias_pc.txt ./satbias_pc
++ ln -fs /work/noaa/stmp/rtreadon/COMROOT/prgsi/gdas.20260609/18/analysis/atmos/gdas.t18z.abias_air.txt ./aircftbias_in
++ ln -fs /work/noaa/stmp/rtreadon/COMROOT/prgsi/gdas.20260609/18/model/atmos/history/gdas.t18z.sfc.f006.nc ./sfcf06
++ ln -fs /work/noaa/stmp/rtreadon/COMROOT/prgsi/gdas.20260609/18/model/atmos/history/gdas.t18z.atm.f006.nc ./sigf06
++ [[ NO = \Y\E\S ]]
++ [[ 3 = \1 ]]
++ [[ NO = \Y\E\S ]]
++ [[ .true. = \.\t\r\u\e\. ]]
++ ln -fs /work/noaa/stmp/rtreadon/COMROOT/prgsi/enkfgdas.20260609/18/ensstat/model/atmos/history/enkfgdas.t18z.ensmean.sfc.f006.nc ./sfcf06_anlgrid
++ [[ NO = YES ]]
++ APRUN='srun -l --export=ALL -n 160'
++ date
+Fri Jun 26 08:13:27 CDT 2026
++ srun -l --export=ALL -n 160 /work/noaa/stmp/dsuralik/tmp_gsi/test.2026061000/gsi.x
++ rc=0
++ date
+Fri Jun 26 08:15:04 CDT 2026
++ cat fort.206 fort.207 fort.208 fort.217 fort.220
++ [[ YES = \N\O ]]
++ mkdir -p /work/noaa/stmp/dsuralik/out_gsi/test.2026061000
++ cat stdout fort.206 fort.207 fort.208 fort.217 fort.220
++ cat fort.206 fort.207 fort.208 fort.217 fort.220
++ cat fort.206 fort.207 fort.208 fort.217 fort.220
++ /bin/cp siganl /work/noaa/stmp/dsuralik/out_gsi/test.2026061000/gfnanl.gdas.2026061000
+/bin/cp: cannot stat 'siganl': No such file or directory
++ /bin/cp satbias_out /work/noaa/stmp/dsuralik/out_gsi/test.2026061000/biascr.gdas.2026061000
++ /bin/cp satbias_pc.out /work/noaa/stmp/dsuralik/out_gsi/test.2026061000/biascr_pc.gdas.2026061000
++ /bin/cp satbias_out.int /work/noaa/stmp/dsuralik/out_gsi/test.2026061000/biascr.int.gdas.2026061000
++ CNVSTAT=/work/noaa/stmp/dsuralik/out_gsi/test.2026061000/cnvstat.gdas.2026061000
++ PCPSTAT=/work/noaa/stmp/dsuralik/out_gsi/test.2026061000/pcpstat.gdas.2026061000
++ OZNSTAT=/work/noaa/stmp/dsuralik/out_gsi/test.2026061000/oznstat.gdas.2026061000
++ RADSTAT=/work/noaa/stmp/dsuralik/out_gsi/test.2026061000/radstat.gdas.2026061000
++ rm -f /work/noaa/stmp/dsuralik/out_gsi/test.2026061000/cnvstat.gdas.2026061000
++ rm -f /work/noaa/stmp/dsuralik/out_gsi/test.2026061000/pcpstat.gdas.2026061000
++ rm -f /work/noaa/stmp/dsuralik/out_gsi/test.2026061000/oznstat.gdas.2026061000
++ rm -f /work/noaa/stmp/dsuralik/out_gsi/test.2026061000/radstat.gdas.2026061000
++ cd /work/noaa/stmp/dsuralik/tmp_gsi/test.2026061000
++ rm -rf 'diag_*'
+++ date
++ echo 'before GENDIAG= YES at Fri Jun 26 08:15:04 CDT 2026'
+before GENDIAG= YES at Fri Jun 26 08:15:04 CDT 2026
++ '[' YES = YES ']'
++ cd ./
++ ntype=3
++ diagtype[0]='conv conv_gps conv_ps conv_pw conv_q conv_sst conv_t conv_tcp conv_uv conv_spd'
++ diagtype[1]='pcp_ssmi_dmsp pcp_tmi_trmm'
++ diagtype[2]='sbuv2_n16 sbuv2_n17 sbuv2_n18 sbuv2_n19 gome_metop-a gome_metop-b gome_metop-c omi_aura mls30_aura ompsnp_npp ompstc8_npp ompslp_npp ompsnp_n20 ompstc8_n20 ompslp_n20 ompsnp_n21 ompstc8_n21 ompslp_n21'
++ diagtype[3]='hirs2_n14 msu_n14 sndr_g08 sndr_g11 sndr_g12 sndr_g13 sndr_g08_prep sndr_g11_prep sndr_g12_prep sndr_g13_prep sndrd1_g11 sndrd2_g11 sndrd3_g11 sndrd4_g11 sndrd1_g12 sndrd2_g12 sndrd3_g12 sndrd4_g12 sndrd1_g13 sndrd2_g13 sndrd3_g13 sndrd4_g13 sndrd1_g14 sndrd2_g14 sndrd3_g14 sndrd4_g14 sndrd1_g15 sndrd2_g15 sndrd3_g15 sndrd4_g15 hirs3_n15 hirs3_n16 hirs3_n17 amsua_n15 amsua_n16 amsua_n17 amsub_n15 amsub_n16 amsub_n17 hsb_aqua airs_aqua amsua_aqua imgr_g08 imgr_g11 imgr_g12 imgr_g14 imgr_g15 ssmi_f13 ssmi_f15 hirs4_n18 hirs4_metop-a amsua_n18 amsua_metop-a mhs_n18 mhs_metop-a amsre_low_aqua amsre_mid_aqua amsre_hig_aqua ssmis_f16 ssmis_f17 ssmis_f18 ssmis_f19 ssmis_f20 iasi_metop-a hirs4_n19 amsua_n19 mhs_n19 seviri_m08 seviri_m09 seviri_m10 seviri_m11 cris_npp cris-fsr_npp cris-fsr_n20 cris-fsr_n21 atms_npp atms_n20 atms_n21 hirs4_metop-b amsua_metop-b mhs_metop-b iasi_metop-b avhrr_metop-b avhrr_n18 avhrr_n19 avhrr_metop-a amsr2_gcom-w1 gmi_gpm saphir_meghat ahi_himawari8 ahi_himawari9 abi_g16 abi_g17 abi_g18 abi_g19 amsua_metop-c mhs_metop-c iasi_metop-c avhrr_metop-c viirs-m_j1 viirs-m_j2'
++ diaglist[0]=listcnv
++ diaglist[1]=listpcp
++ diaglist[2]=listozn
++ diaglist[3]=listrad
++ diagfile[0]=/work/noaa/stmp/dsuralik/out_gsi/test.2026061000/cnvstat.gdas.2026061000
++ diagfile[1]=/work/noaa/stmp/dsuralik/out_gsi/test.2026061000/pcpstat.gdas.2026061000
++ diagfile[2]=/work/noaa/stmp/dsuralik/out_gsi/test.2026061000/oznstat.gdas.2026061000
++ diagfile[3]=/work/noaa/stmp/dsuralik/out_gsi/test.2026061000/radstat.gdas.2026061000
++ numfile[0]=0
++ numfile[1]=0
++ numfile[2]=0
++ numfile[3]=0
++ '[' .true. = .true. ']'
++ prefix=' dir.*/'
++ '[' = YES ']'
+/var/spool/slurmd/job9170886/slurm_script: line 1001: [: =: unary operator expected
++ loops='01 02 03'
++ for loop in $loops
++ case $loop in
++ string=ges
+++ date
++ echo Fri Jun 26 08:15:04 CDT 2026 START loop ges
+Fri Jun 26 08:15:04 CDT 2026 START loop ges
++ n=-1
++ '[' 0 -le 3 ']'
+++ echo conv conv_gps conv_ps conv_pw conv_q conv_sst conv_t conv_tcp conv_uv conv_spd
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/conv_01*'
+ls: cannot access 'dir.*/conv_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/conv_gps_01*'
+ls: cannot access 'dir.*/conv_gps_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/conv_ps_01*'
+ls: cannot access 'dir.*/conv_ps_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/conv_pw_01*'
+ls: cannot access 'dir.*/conv_pw_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/conv_q_01*'
+ls: cannot access 'dir.*/conv_q_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/conv_sst_01*'
+ls: cannot access 'dir.*/conv_sst_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/conv_t_01*'
+ls: cannot access 'dir.*/conv_t_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/conv_tcp_01*'
+ls: cannot access 'dir.*/conv_tcp_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/conv_uv_01*'
+ls: cannot access 'dir.*/conv_uv_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/conv_spd_01*'
+ls: cannot access 'dir.*/conv_spd_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ '[' 1 -le 3 ']'
+++ echo pcp_ssmi_dmsp pcp_tmi_trmm
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/pcp_ssmi_dmsp_01*'
+ls: cannot access 'dir.*/pcp_ssmi_dmsp_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/pcp_tmi_trmm_01*'
+ls: cannot access 'dir.*/pcp_tmi_trmm_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ '[' 2 -le 3 ']'
+++ echo sbuv2_n16 sbuv2_n17 sbuv2_n18 sbuv2_n19 gome_metop-a gome_metop-b gome_metop-c omi_aura mls30_aura ompsnp_npp ompstc8_npp ompslp_npp ompsnp_n20 ompstc8_n20 ompslp_n20 ompsnp_n21 ompstc8_n21 ompslp_n21
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sbuv2_n16_01*'
+ls: cannot access 'dir.*/sbuv2_n16_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sbuv2_n17_01*'
+ls: cannot access 'dir.*/sbuv2_n17_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sbuv2_n18_01*'
+ls: cannot access 'dir.*/sbuv2_n18_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sbuv2_n19_01*'
+ls: cannot access 'dir.*/sbuv2_n19_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/gome_metop-a_01*'
+ls: cannot access 'dir.*/gome_metop-a_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/gome_metop-b_01*'
+ls: cannot access 'dir.*/gome_metop-b_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/gome_metop-c_01*'
+ls: cannot access 'dir.*/gome_metop-c_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/omi_aura_01*'
+ls: cannot access 'dir.*/omi_aura_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/mls30_aura_01*'
+ls: cannot access 'dir.*/mls30_aura_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ompsnp_npp_01*'
+ls: cannot access 'dir.*/ompsnp_npp_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ompstc8_npp_01*'
+ls: cannot access 'dir.*/ompstc8_npp_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ompslp_npp_01*'
+ls: cannot access 'dir.*/ompslp_npp_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ompsnp_n20_01*'
+ls: cannot access 'dir.*/ompsnp_n20_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ompstc8_n20_01*'
+ls: cannot access 'dir.*/ompstc8_n20_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ompslp_n20_01*'
+ls: cannot access 'dir.*/ompslp_n20_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ompsnp_n21_01*'
+ls: cannot access 'dir.*/ompsnp_n21_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ompstc8_n21_01*'
+ls: cannot access 'dir.*/ompstc8_n21_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ompslp_n21_01*'
+ls: cannot access 'dir.*/ompslp_n21_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ '[' 3 -le 3 ']'
+++ echo hirs2_n14 msu_n14 sndr_g08 sndr_g11 sndr_g12 sndr_g13 sndr_g08_prep sndr_g11_prep sndr_g12_prep sndr_g13_prep sndrd1_g11 sndrd2_g11 sndrd3_g11 sndrd4_g11 sndrd1_g12 sndrd2_g12 sndrd3_g12 sndrd4_g12 sndrd1_g13 sndrd2_g13 sndrd3_g13 sndrd4_g13 sndrd1_g14 sndrd2_g14 sndrd3_g14 sndrd4_g14 sndrd1_g15 sndrd2_g15 sndrd3_g15 sndrd4_g15 hirs3_n15 hirs3_n16 hirs3_n17 amsua_n15 amsua_n16 amsua_n17 amsub_n15 amsub_n16 amsub_n17 hsb_aqua airs_aqua amsua_aqua imgr_g08 imgr_g11 imgr_g12 imgr_g14 imgr_g15 ssmi_f13 ssmi_f15 hirs4_n18 hirs4_metop-a amsua_n18 amsua_metop-a mhs_n18 mhs_metop-a amsre_low_aqua amsre_mid_aqua amsre_hig_aqua ssmis_f16 ssmis_f17 ssmis_f18 ssmis_f19 ssmis_f20 iasi_metop-a hirs4_n19 amsua_n19 mhs_n19 seviri_m08 seviri_m09 seviri_m10 seviri_m11 cris_npp cris-fsr_npp cris-fsr_n20 cris-fsr_n21 atms_npp atms_n20 atms_n21 hirs4_metop-b amsua_metop-b mhs_metop-b iasi_metop-b avhrr_metop-b avhrr_n18 avhrr_n19 avhrr_metop-a amsr2_gcom-w1 gmi_gpm saphir_meghat ahi_himawari8 ahi_himawari9 abi_g16 abi_g17 abi_g18 abi_g19 amsua_metop-c mhs_metop-c iasi_metop-c avhrr_metop-c viirs-m_j1 viirs-m_j2
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/hirs2_n14_01*'
+ls: cannot access 'dir.*/hirs2_n14_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/msu_n14_01*'
+ls: cannot access 'dir.*/msu_n14_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndr_g08_01*'
+ls: cannot access 'dir.*/sndr_g08_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndr_g11_01*'
+ls: cannot access 'dir.*/sndr_g11_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndr_g12_01*'
+ls: cannot access 'dir.*/sndr_g12_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndr_g13_01*'
+ls: cannot access 'dir.*/sndr_g13_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndr_g08_prep_01*'
+ls: cannot access 'dir.*/sndr_g08_prep_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndr_g11_prep_01*'
+ls: cannot access 'dir.*/sndr_g11_prep_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndr_g12_prep_01*'
+ls: cannot access 'dir.*/sndr_g12_prep_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndr_g13_prep_01*'
+ls: cannot access 'dir.*/sndr_g13_prep_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd1_g11_01*'
+ls: cannot access 'dir.*/sndrd1_g11_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd2_g11_01*'
+ls: cannot access 'dir.*/sndrd2_g11_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd3_g11_01*'
+ls: cannot access 'dir.*/sndrd3_g11_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd4_g11_01*'
+ls: cannot access 'dir.*/sndrd4_g11_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd1_g12_01*'
+ls: cannot access 'dir.*/sndrd1_g12_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd2_g12_01*'
+ls: cannot access 'dir.*/sndrd2_g12_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd3_g12_01*'
+ls: cannot access 'dir.*/sndrd3_g12_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd4_g12_01*'
+ls: cannot access 'dir.*/sndrd4_g12_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd1_g13_01*'
+ls: cannot access 'dir.*/sndrd1_g13_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd2_g13_01*'
+ls: cannot access 'dir.*/sndrd2_g13_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd3_g13_01*'
+ls: cannot access 'dir.*/sndrd3_g13_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd4_g13_01*'
+ls: cannot access 'dir.*/sndrd4_g13_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd1_g14_01*'
+ls: cannot access 'dir.*/sndrd1_g14_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd2_g14_01*'
+ls: cannot access 'dir.*/sndrd2_g14_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd3_g14_01*'
+ls: cannot access 'dir.*/sndrd3_g14_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd4_g14_01*'
+ls: cannot access 'dir.*/sndrd4_g14_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd1_g15_01*'
+ls: cannot access 'dir.*/sndrd1_g15_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd2_g15_01*'
+ls: cannot access 'dir.*/sndrd2_g15_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd3_g15_01*'
+ls: cannot access 'dir.*/sndrd3_g15_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd4_g15_01*'
+ls: cannot access 'dir.*/sndrd4_g15_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/hirs3_n15_01*'
+ls: cannot access 'dir.*/hirs3_n15_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/hirs3_n16_01*'
+ls: cannot access 'dir.*/hirs3_n16_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/hirs3_n17_01*'
+ls: cannot access 'dir.*/hirs3_n17_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsua_n15_01*'
+ls: cannot access 'dir.*/amsua_n15_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsua_n16_01*'
+ls: cannot access 'dir.*/amsua_n16_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsua_n17_01*'
+ls: cannot access 'dir.*/amsua_n17_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsub_n15_01*'
+ls: cannot access 'dir.*/amsub_n15_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsub_n16_01*'
+ls: cannot access 'dir.*/amsub_n16_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsub_n17_01*'
+ls: cannot access 'dir.*/amsub_n17_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/hsb_aqua_01*'
+ls: cannot access 'dir.*/hsb_aqua_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/airs_aqua_01*'
+ls: cannot access 'dir.*/airs_aqua_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsua_aqua_01*'
+ls: cannot access 'dir.*/amsua_aqua_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/imgr_g08_01*'
+ls: cannot access 'dir.*/imgr_g08_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/imgr_g11_01*'
+ls: cannot access 'dir.*/imgr_g11_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/imgr_g12_01*'
+ls: cannot access 'dir.*/imgr_g12_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/imgr_g14_01*'
+ls: cannot access 'dir.*/imgr_g14_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/imgr_g15_01*'
+ls: cannot access 'dir.*/imgr_g15_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ssmi_f13_01*'
+ls: cannot access 'dir.*/ssmi_f13_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ssmi_f15_01*'
+ls: cannot access 'dir.*/ssmi_f15_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/hirs4_n18_01*'
+ls: cannot access 'dir.*/hirs4_n18_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/hirs4_metop-a_01*'
+ls: cannot access 'dir.*/hirs4_metop-a_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsua_n18_01*'
+ls: cannot access 'dir.*/amsua_n18_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsua_metop-a_01*'
+ls: cannot access 'dir.*/amsua_metop-a_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/mhs_n18_01*'
+ls: cannot access 'dir.*/mhs_n18_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/mhs_metop-a_01*'
+ls: cannot access 'dir.*/mhs_metop-a_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsre_low_aqua_01*'
+ls: cannot access 'dir.*/amsre_low_aqua_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsre_mid_aqua_01*'
+ls: cannot access 'dir.*/amsre_mid_aqua_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsre_hig_aqua_01*'
+ls: cannot access 'dir.*/amsre_hig_aqua_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ssmis_f16_01*'
+ls: cannot access 'dir.*/ssmis_f16_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ssmis_f17_01*'
+ls: cannot access 'dir.*/ssmis_f17_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ssmis_f18_01*'
+ls: cannot access 'dir.*/ssmis_f18_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ssmis_f19_01*'
+ls: cannot access 'dir.*/ssmis_f19_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ssmis_f20_01*'
+ls: cannot access 'dir.*/ssmis_f20_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/iasi_metop-a_01*'
+ls: cannot access 'dir.*/iasi_metop-a_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/hirs4_n19_01*'
+ls: cannot access 'dir.*/hirs4_n19_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsua_n19_01*'
+ls: cannot access 'dir.*/amsua_n19_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/mhs_n19_01*'
+ls: cannot access 'dir.*/mhs_n19_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/seviri_m08_01*'
+ls: cannot access 'dir.*/seviri_m08_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/seviri_m09_01*'
+ls: cannot access 'dir.*/seviri_m09_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/seviri_m10_01*'
+ls: cannot access 'dir.*/seviri_m10_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/seviri_m11_01*'
+ls: cannot access 'dir.*/seviri_m11_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/cris_npp_01*'
+ls: cannot access 'dir.*/cris_npp_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/cris-fsr_npp_01*'
+ls: cannot access 'dir.*/cris-fsr_npp_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/cris-fsr_n20_01*'
+ls: cannot access 'dir.*/cris-fsr_n20_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/cris-fsr_n21_01*'
+ls: cannot access 'dir.*/cris-fsr_n21_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/atms_npp_01*'
+ls: cannot access 'dir.*/atms_npp_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls dir.0000/atms_n20_01.nc4 dir.0001/atms_n20_01.nc4 dir.0002/atms_n20_01.nc4 dir.0003/atms_n20_01.nc4 dir.0004/atms_n20_01.nc4 dir.0005/atms_n20_01.nc4 dir.0006/atms_n20_01.nc4 dir.0007/atms_n20_01.nc4 dir.0008/atms_n20_01.nc4 dir.0009/atms_n20_01.nc4 dir.0010/atms_n20_01.nc4 dir.0011/atms_n20_01.nc4 dir.0012/atms_n20_01.nc4 dir.0013/atms_n20_01.nc4 dir.0014/atms_n20_01.nc4 dir.0015/atms_n20_01.nc4 dir.0016/atms_n20_01.nc4 dir.0017/atms_n20_01.nc4 dir.0018/atms_n20_01.nc4 dir.0019/atms_n20_01.nc4 dir.0020/atms_n20_01.nc4 dir.0021/atms_n20_01.nc4 dir.0022/atms_n20_01.nc4 dir.0023/atms_n20_01.nc4 dir.0024/atms_n20_01.nc4 dir.0025/atms_n20_01.nc4 dir.0026/atms_n20_01.nc4 dir.0027/atms_n20_01.nc4 dir.0028/atms_n20_01.nc4 dir.0029/atms_n20_01.nc4 dir.0035/atms_n20_01.nc4 dir.0036/atms_n20_01.nc4 dir.0037/atms_n20_01.nc4 dir.0038/atms_n20_01.nc4 dir.0039/atms_n20_01.nc4 dir.0048/atms_n20_01.nc4 dir.0049/atms_n20_01.nc4 dir.0058/atms_n20_01.nc4 dir.0059/atms_n20_01.nc4 dir.0066/atms_n20_01.nc4 dir.0067/atms_n20_01.nc4 dir.0068/atms_n20_01.nc4 dir.0069/atms_n20_01.nc4 dir.0071/atms_n20_01.nc4 dir.0072/atms_n20_01.nc4 dir.0073/atms_n20_01.nc4 dir.0074/atms_n20_01.nc4 dir.0075/atms_n20_01.nc4 dir.0076/atms_n20_01.nc4 dir.0077/atms_n20_01.nc4 dir.0078/atms_n20_01.nc4 dir.0079/atms_n20_01.nc4 dir.0080/atms_n20_01.nc4 dir.0081/atms_n20_01.nc4 dir.0082/atms_n20_01.nc4 dir.0083/atms_n20_01.nc4 dir.0084/atms_n20_01.nc4 dir.0085/atms_n20_01.nc4 dir.0086/atms_n20_01.nc4 dir.0087/atms_n20_01.nc4 dir.0088/atms_n20_01.nc4 dir.0089/atms_n20_01.nc4 dir.0090/atms_n20_01.nc4 dir.0091/atms_n20_01.nc4 dir.0092/atms_n20_01.nc4 dir.0093/atms_n20_01.nc4 dir.0094/atms_n20_01.nc4 dir.0095/atms_n20_01.nc4 dir.0096/atms_n20_01.nc4 dir.0097/atms_n20_01.nc4 dir.0098/atms_n20_01.nc4 dir.0099/atms_n20_01.nc4 dir.0100/atms_n20_01.nc4 dir.0101/atms_n20_01.nc4 dir.0102/atms_n20_01.nc4 dir.0103/atms_n20_01.nc4 dir.0104/atms_n20_01.nc4 dir.0105/atms_n20_01.nc4 dir.0106/atms_n20_01.nc4 dir.0107/atms_n20_01.nc4 dir.0108/atms_n20_01.nc4 dir.0109/atms_n20_01.nc4 dir.0110/atms_n20_01.nc4 dir.0111/atms_n20_01.nc4 dir.0112/atms_n20_01.nc4 dir.0113/atms_n20_01.nc4 dir.0114/atms_n20_01.nc4 dir.0115/atms_n20_01.nc4 dir.0116/atms_n20_01.nc4 dir.0117/atms_n20_01.nc4 dir.0118/atms_n20_01.nc4 dir.0119/atms_n20_01.nc4 dir.0124/atms_n20_01.nc4 dir.0125/atms_n20_01.nc4 dir.0133/atms_n20_01.nc4 dir.0134/atms_n20_01.nc4 dir.0142/atms_n20_01.nc4 dir.0143/atms_n20_01.nc4 dir.0144/atms_n20_01.nc4 dir.0147/atms_n20_01.nc4 dir.0148/atms_n20_01.nc4 dir.0149/atms_n20_01.nc4 dir.0151/atms_n20_01.nc4 dir.0152/atms_n20_01.nc4 dir.0153/atms_n20_01.nc4 dir.0154/atms_n20_01.nc4 dir.0155/atms_n20_01.nc4 dir.0156/atms_n20_01.nc4 dir.0157/atms_n20_01.nc4 dir.0158/atms_n20_01.nc4 dir.0159/atms_n20_01.nc4
++ count=111
++ '[' 111 -gt 1 ']'
++ '[' = YES ']'
+/var/spool/slurmd/job9170886/slurm_script: line 1055: [: =: unary operator expected
++ cat dir.0000/atms_n20_01.nc4 dir.0001/atms_n20_01.nc4 dir.0002/atms_n20_01.nc4 dir.0003/atms_n20_01.nc4 dir.0004/atms_n20_01.nc4 dir.0005/atms_n20_01.nc4 dir.0006/atms_n20_01.nc4 dir.0007/atms_n20_01.nc4 dir.0008/atms_n20_01.nc4 dir.0009/atms_n20_01.nc4 dir.0010/atms_n20_01.nc4 dir.0011/atms_n20_01.nc4 dir.0012/atms_n20_01.nc4 dir.0013/atms_n20_01.nc4 dir.0014/atms_n20_01.nc4 dir.0015/atms_n20_01.nc4 dir.0016/atms_n20_01.nc4 dir.0017/atms_n20_01.nc4 dir.0018/atms_n20_01.nc4 dir.0019/atms_n20_01.nc4 dir.0020/atms_n20_01.nc4 dir.0021/atms_n20_01.nc4 dir.0022/atms_n20_01.nc4 dir.0023/atms_n20_01.nc4 dir.0024/atms_n20_01.nc4 dir.0025/atms_n20_01.nc4 dir.0026/atms_n20_01.nc4 dir.0027/atms_n20_01.nc4 dir.0028/atms_n20_01.nc4 dir.0029/atms_n20_01.nc4 dir.0035/atms_n20_01.nc4 dir.0036/atms_n20_01.nc4 dir.0037/atms_n20_01.nc4 dir.0038/atms_n20_01.nc4 dir.0039/atms_n20_01.nc4 dir.0048/atms_n20_01.nc4 dir.0049/atms_n20_01.nc4 dir.0058/atms_n20_01.nc4 dir.0059/atms_n20_01.nc4 dir.0066/atms_n20_01.nc4 dir.0067/atms_n20_01.nc4 dir.0068/atms_n20_01.nc4 dir.0069/atms_n20_01.nc4 dir.0071/atms_n20_01.nc4 dir.0072/atms_n20_01.nc4 dir.0073/atms_n20_01.nc4 dir.0074/atms_n20_01.nc4 dir.0075/atms_n20_01.nc4 dir.0076/atms_n20_01.nc4 dir.0077/atms_n20_01.nc4 dir.0078/atms_n20_01.nc4 dir.0079/atms_n20_01.nc4 dir.0080/atms_n20_01.nc4 dir.0081/atms_n20_01.nc4 dir.0082/atms_n20_01.nc4 dir.0083/atms_n20_01.nc4 dir.0084/atms_n20_01.nc4 dir.0085/atms_n20_01.nc4 dir.0086/atms_n20_01.nc4 dir.0087/atms_n20_01.nc4 dir.0088/atms_n20_01.nc4 dir.0089/atms_n20_01.nc4 dir.0090/atms_n20_01.nc4 dir.0091/atms_n20_01.nc4 dir.0092/atms_n20_01.nc4 dir.0093/atms_n20_01.nc4 dir.0094/atms_n20_01.nc4 dir.0095/atms_n20_01.nc4 dir.0096/atms_n20_01.nc4 dir.0097/atms_n20_01.nc4 dir.0098/atms_n20_01.nc4 dir.0099/atms_n20_01.nc4 dir.0100/atms_n20_01.nc4 dir.0101/atms_n20_01.nc4 dir.0102/atms_n20_01.nc4 dir.0103/atms_n20_01.nc4 dir.0104/atms_n20_01.nc4 dir.0105/atms_n20_01.nc4 dir.0106/atms_n20_01.nc4 dir.0107/atms_n20_01.nc4 dir.0108/atms_n20_01.nc4 dir.0109/atms_n20_01.nc4 dir.0110/atms_n20_01.nc4 dir.0111/atms_n20_01.nc4 dir.0112/atms_n20_01.nc4 dir.0113/atms_n20_01.nc4 dir.0114/atms_n20_01.nc4 dir.0115/atms_n20_01.nc4 dir.0116/atms_n20_01.nc4 dir.0117/atms_n20_01.nc4 dir.0118/atms_n20_01.nc4 dir.0119/atms_n20_01.nc4 dir.0124/atms_n20_01.nc4 dir.0125/atms_n20_01.nc4 dir.0133/atms_n20_01.nc4 dir.0134/atms_n20_01.nc4 dir.0142/atms_n20_01.nc4 dir.0143/atms_n20_01.nc4 dir.0144/atms_n20_01.nc4 dir.0147/atms_n20_01.nc4 dir.0148/atms_n20_01.nc4 dir.0149/atms_n20_01.nc4 dir.0151/atms_n20_01.nc4 dir.0152/atms_n20_01.nc4 dir.0153/atms_n20_01.nc4 dir.0154/atms_n20_01.nc4 dir.0155/atms_n20_01.nc4 dir.0156/atms_n20_01.nc4 dir.0157/atms_n20_01.nc4 dir.0158/atms_n20_01.nc4 dir.0159/atms_n20_01.nc4
++ echo 'diag_atms_n20_ges.2026061000*'
+++ expr 0 + 1
++ numfile[n]=1
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/atms_n21_01*'
+ls: cannot access 'dir.*/atms_n21_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/hirs4_metop-b_01*'
+ls: cannot access 'dir.*/hirs4_metop-b_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsua_metop-b_01*'
+ls: cannot access 'dir.*/amsua_metop-b_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/mhs_metop-b_01*'
+ls: cannot access 'dir.*/mhs_metop-b_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/iasi_metop-b_01*'
+ls: cannot access 'dir.*/iasi_metop-b_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/avhrr_metop-b_01*'
+ls: cannot access 'dir.*/avhrr_metop-b_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/avhrr_n18_01*'
+ls: cannot access 'dir.*/avhrr_n18_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/avhrr_n19_01*'
+ls: cannot access 'dir.*/avhrr_n19_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/avhrr_metop-a_01*'
+ls: cannot access 'dir.*/avhrr_metop-a_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsr2_gcom-w1_01*'
+ls: cannot access 'dir.*/amsr2_gcom-w1_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/gmi_gpm_01*'
+ls: cannot access 'dir.*/gmi_gpm_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/saphir_meghat_01*'
+ls: cannot access 'dir.*/saphir_meghat_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ahi_himawari8_01*'
+ls: cannot access 'dir.*/ahi_himawari8_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ahi_himawari9_01*'
+ls: cannot access 'dir.*/ahi_himawari9_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/abi_g16_01*'
+ls: cannot access 'dir.*/abi_g16_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/abi_g17_01*'
+ls: cannot access 'dir.*/abi_g17_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/abi_g18_01*'
+ls: cannot access 'dir.*/abi_g18_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/abi_g19_01*'
+ls: cannot access 'dir.*/abi_g19_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsua_metop-c_01*'
+ls: cannot access 'dir.*/amsua_metop-c_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/mhs_metop-c_01*'
+ls: cannot access 'dir.*/mhs_metop-c_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/iasi_metop-c_01*'
+ls: cannot access 'dir.*/iasi_metop-c_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/avhrr_metop-c_01*'
+ls: cannot access 'dir.*/avhrr_metop-c_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/viirs-m_j1_01*'
+ls: cannot access 'dir.*/viirs-m_j1_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/viirs-m_j2_01*'
+ls: cannot access 'dir.*/viirs-m_j2_01*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ '[' 4 -le 3 ']'
+++ date
++ echo Fri Jun 26 08:15:08 CDT 2026 END loop ges
+Fri Jun 26 08:15:08 CDT 2026 END loop ges
++ for loop in $loops
++ case $loop in
++ string=02
+++ date
++ echo Fri Jun 26 08:15:08 CDT 2026 START loop 02
+Fri Jun 26 08:15:08 CDT 2026 START loop 02
++ n=-1
++ '[' 0 -le 3 ']'
+++ echo conv conv_gps conv_ps conv_pw conv_q conv_sst conv_t conv_tcp conv_uv conv_spd
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/conv_02*'
+ls: cannot access 'dir.*/conv_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/conv_gps_02*'
+ls: cannot access 'dir.*/conv_gps_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/conv_ps_02*'
+ls: cannot access 'dir.*/conv_ps_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/conv_pw_02*'
+ls: cannot access 'dir.*/conv_pw_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/conv_q_02*'
+ls: cannot access 'dir.*/conv_q_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/conv_sst_02*'
+ls: cannot access 'dir.*/conv_sst_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/conv_t_02*'
+ls: cannot access 'dir.*/conv_t_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/conv_tcp_02*'
+ls: cannot access 'dir.*/conv_tcp_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/conv_uv_02*'
+ls: cannot access 'dir.*/conv_uv_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/conv_spd_02*'
+ls: cannot access 'dir.*/conv_spd_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ '[' 1 -le 3 ']'
+++ echo pcp_ssmi_dmsp pcp_tmi_trmm
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/pcp_ssmi_dmsp_02*'
+ls: cannot access 'dir.*/pcp_ssmi_dmsp_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/pcp_tmi_trmm_02*'
+ls: cannot access 'dir.*/pcp_tmi_trmm_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ '[' 2 -le 3 ']'
+++ echo sbuv2_n16 sbuv2_n17 sbuv2_n18 sbuv2_n19 gome_metop-a gome_metop-b gome_metop-c omi_aura mls30_aura ompsnp_npp ompstc8_npp ompslp_npp ompsnp_n20 ompstc8_n20 ompslp_n20 ompsnp_n21 ompstc8_n21 ompslp_n21
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sbuv2_n16_02*'
+ls: cannot access 'dir.*/sbuv2_n16_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sbuv2_n17_02*'
+ls: cannot access 'dir.*/sbuv2_n17_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sbuv2_n18_02*'
+ls: cannot access 'dir.*/sbuv2_n18_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sbuv2_n19_02*'
+ls: cannot access 'dir.*/sbuv2_n19_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/gome_metop-a_02*'
+ls: cannot access 'dir.*/gome_metop-a_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/gome_metop-b_02*'
+ls: cannot access 'dir.*/gome_metop-b_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/gome_metop-c_02*'
+ls: cannot access 'dir.*/gome_metop-c_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/omi_aura_02*'
+ls: cannot access 'dir.*/omi_aura_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/mls30_aura_02*'
+ls: cannot access 'dir.*/mls30_aura_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ompsnp_npp_02*'
+ls: cannot access 'dir.*/ompsnp_npp_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ompstc8_npp_02*'
+ls: cannot access 'dir.*/ompstc8_npp_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ompslp_npp_02*'
+ls: cannot access 'dir.*/ompslp_npp_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ompsnp_n20_02*'
+ls: cannot access 'dir.*/ompsnp_n20_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ompstc8_n20_02*'
+ls: cannot access 'dir.*/ompstc8_n20_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ompslp_n20_02*'
+ls: cannot access 'dir.*/ompslp_n20_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ompsnp_n21_02*'
+ls: cannot access 'dir.*/ompsnp_n21_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ompstc8_n21_02*'
+ls: cannot access 'dir.*/ompstc8_n21_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ompslp_n21_02*'
+ls: cannot access 'dir.*/ompslp_n21_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ '[' 3 -le 3 ']'
+++ echo hirs2_n14 msu_n14 sndr_g08 sndr_g11 sndr_g12 sndr_g13 sndr_g08_prep sndr_g11_prep sndr_g12_prep sndr_g13_prep sndrd1_g11 sndrd2_g11 sndrd3_g11 sndrd4_g11 sndrd1_g12 sndrd2_g12 sndrd3_g12 sndrd4_g12 sndrd1_g13 sndrd2_g13 sndrd3_g13 sndrd4_g13 sndrd1_g14 sndrd2_g14 sndrd3_g14 sndrd4_g14 sndrd1_g15 sndrd2_g15 sndrd3_g15 sndrd4_g15 hirs3_n15 hirs3_n16 hirs3_n17 amsua_n15 amsua_n16 amsua_n17 amsub_n15 amsub_n16 amsub_n17 hsb_aqua airs_aqua amsua_aqua imgr_g08 imgr_g11 imgr_g12 imgr_g14 imgr_g15 ssmi_f13 ssmi_f15 hirs4_n18 hirs4_metop-a amsua_n18 amsua_metop-a mhs_n18 mhs_metop-a amsre_low_aqua amsre_mid_aqua amsre_hig_aqua ssmis_f16 ssmis_f17 ssmis_f18 ssmis_f19 ssmis_f20 iasi_metop-a hirs4_n19 amsua_n19 mhs_n19 seviri_m08 seviri_m09 seviri_m10 seviri_m11 cris_npp cris-fsr_npp cris-fsr_n20 cris-fsr_n21 atms_npp atms_n20 atms_n21 hirs4_metop-b amsua_metop-b mhs_metop-b iasi_metop-b avhrr_metop-b avhrr_n18 avhrr_n19 avhrr_metop-a amsr2_gcom-w1 gmi_gpm saphir_meghat ahi_himawari8 ahi_himawari9 abi_g16 abi_g17 abi_g18 abi_g19 amsua_metop-c mhs_metop-c iasi_metop-c avhrr_metop-c viirs-m_j1 viirs-m_j2
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/hirs2_n14_02*'
+ls: cannot access 'dir.*/hirs2_n14_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/msu_n14_02*'
+ls: cannot access 'dir.*/msu_n14_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndr_g08_02*'
+ls: cannot access 'dir.*/sndr_g08_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndr_g11_02*'
+ls: cannot access 'dir.*/sndr_g11_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndr_g12_02*'
+ls: cannot access 'dir.*/sndr_g12_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndr_g13_02*'
+ls: cannot access 'dir.*/sndr_g13_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndr_g08_prep_02*'
+ls: cannot access 'dir.*/sndr_g08_prep_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndr_g11_prep_02*'
+ls: cannot access 'dir.*/sndr_g11_prep_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndr_g12_prep_02*'
+ls: cannot access 'dir.*/sndr_g12_prep_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndr_g13_prep_02*'
+ls: cannot access 'dir.*/sndr_g13_prep_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd1_g11_02*'
+ls: cannot access 'dir.*/sndrd1_g11_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd2_g11_02*'
+ls: cannot access 'dir.*/sndrd2_g11_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd3_g11_02*'
+ls: cannot access 'dir.*/sndrd3_g11_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd4_g11_02*'
+ls: cannot access 'dir.*/sndrd4_g11_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd1_g12_02*'
+ls: cannot access 'dir.*/sndrd1_g12_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd2_g12_02*'
+ls: cannot access 'dir.*/sndrd2_g12_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd3_g12_02*'
+ls: cannot access 'dir.*/sndrd3_g12_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd4_g12_02*'
+ls: cannot access 'dir.*/sndrd4_g12_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd1_g13_02*'
+ls: cannot access 'dir.*/sndrd1_g13_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd2_g13_02*'
+ls: cannot access 'dir.*/sndrd2_g13_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd3_g13_02*'
+ls: cannot access 'dir.*/sndrd3_g13_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd4_g13_02*'
+ls: cannot access 'dir.*/sndrd4_g13_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd1_g14_02*'
+ls: cannot access 'dir.*/sndrd1_g14_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd2_g14_02*'
+ls: cannot access 'dir.*/sndrd2_g14_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd3_g14_02*'
+ls: cannot access 'dir.*/sndrd3_g14_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd4_g14_02*'
+ls: cannot access 'dir.*/sndrd4_g14_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd1_g15_02*'
+ls: cannot access 'dir.*/sndrd1_g15_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd2_g15_02*'
+ls: cannot access 'dir.*/sndrd2_g15_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd3_g15_02*'
+ls: cannot access 'dir.*/sndrd3_g15_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd4_g15_02*'
+ls: cannot access 'dir.*/sndrd4_g15_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/hirs3_n15_02*'
+ls: cannot access 'dir.*/hirs3_n15_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/hirs3_n16_02*'
+ls: cannot access 'dir.*/hirs3_n16_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/hirs3_n17_02*'
+ls: cannot access 'dir.*/hirs3_n17_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsua_n15_02*'
+ls: cannot access 'dir.*/amsua_n15_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsua_n16_02*'
+ls: cannot access 'dir.*/amsua_n16_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsua_n17_02*'
+ls: cannot access 'dir.*/amsua_n17_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsub_n15_02*'
+ls: cannot access 'dir.*/amsub_n15_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsub_n16_02*'
+ls: cannot access 'dir.*/amsub_n16_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsub_n17_02*'
+ls: cannot access 'dir.*/amsub_n17_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/hsb_aqua_02*'
+ls: cannot access 'dir.*/hsb_aqua_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/airs_aqua_02*'
+ls: cannot access 'dir.*/airs_aqua_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsua_aqua_02*'
+ls: cannot access 'dir.*/amsua_aqua_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/imgr_g08_02*'
+ls: cannot access 'dir.*/imgr_g08_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/imgr_g11_02*'
+ls: cannot access 'dir.*/imgr_g11_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/imgr_g12_02*'
+ls: cannot access 'dir.*/imgr_g12_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/imgr_g14_02*'
+ls: cannot access 'dir.*/imgr_g14_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/imgr_g15_02*'
+ls: cannot access 'dir.*/imgr_g15_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ssmi_f13_02*'
+ls: cannot access 'dir.*/ssmi_f13_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ssmi_f15_02*'
+ls: cannot access 'dir.*/ssmi_f15_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/hirs4_n18_02*'
+ls: cannot access 'dir.*/hirs4_n18_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/hirs4_metop-a_02*'
+ls: cannot access 'dir.*/hirs4_metop-a_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsua_n18_02*'
+ls: cannot access 'dir.*/amsua_n18_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsua_metop-a_02*'
+ls: cannot access 'dir.*/amsua_metop-a_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/mhs_n18_02*'
+ls: cannot access 'dir.*/mhs_n18_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/mhs_metop-a_02*'
+ls: cannot access 'dir.*/mhs_metop-a_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsre_low_aqua_02*'
+ls: cannot access 'dir.*/amsre_low_aqua_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsre_mid_aqua_02*'
+ls: cannot access 'dir.*/amsre_mid_aqua_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsre_hig_aqua_02*'
+ls: cannot access 'dir.*/amsre_hig_aqua_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ssmis_f16_02*'
+ls: cannot access 'dir.*/ssmis_f16_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ssmis_f17_02*'
+ls: cannot access 'dir.*/ssmis_f17_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ssmis_f18_02*'
+ls: cannot access 'dir.*/ssmis_f18_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ssmis_f19_02*'
+ls: cannot access 'dir.*/ssmis_f19_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ssmis_f20_02*'
+ls: cannot access 'dir.*/ssmis_f20_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/iasi_metop-a_02*'
+ls: cannot access 'dir.*/iasi_metop-a_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/hirs4_n19_02*'
+ls: cannot access 'dir.*/hirs4_n19_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsua_n19_02*'
+ls: cannot access 'dir.*/amsua_n19_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/mhs_n19_02*'
+ls: cannot access 'dir.*/mhs_n19_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/seviri_m08_02*'
+ls: cannot access 'dir.*/seviri_m08_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/seviri_m09_02*'
+ls: cannot access 'dir.*/seviri_m09_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/seviri_m10_02*'
+ls: cannot access 'dir.*/seviri_m10_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/seviri_m11_02*'
+ls: cannot access 'dir.*/seviri_m11_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/cris_npp_02*'
+ls: cannot access 'dir.*/cris_npp_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/cris-fsr_npp_02*'
+ls: cannot access 'dir.*/cris-fsr_npp_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/cris-fsr_n20_02*'
+ls: cannot access 'dir.*/cris-fsr_n20_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/cris-fsr_n21_02*'
+ls: cannot access 'dir.*/cris-fsr_n21_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/atms_npp_02*'
+ls: cannot access 'dir.*/atms_npp_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls dir.0000/atms_n20_02.nc4 dir.0001/atms_n20_02.nc4 dir.0002/atms_n20_02.nc4 dir.0003/atms_n20_02.nc4 dir.0004/atms_n20_02.nc4 dir.0005/atms_n20_02.nc4 dir.0006/atms_n20_02.nc4 dir.0007/atms_n20_02.nc4 dir.0008/atms_n20_02.nc4 dir.0009/atms_n20_02.nc4 dir.0010/atms_n20_02.nc4 dir.0011/atms_n20_02.nc4 dir.0012/atms_n20_02.nc4 dir.0013/atms_n20_02.nc4 dir.0014/atms_n20_02.nc4 dir.0015/atms_n20_02.nc4 dir.0016/atms_n20_02.nc4 dir.0017/atms_n20_02.nc4 dir.0018/atms_n20_02.nc4 dir.0019/atms_n20_02.nc4 dir.0020/atms_n20_02.nc4 dir.0021/atms_n20_02.nc4 dir.0022/atms_n20_02.nc4 dir.0023/atms_n20_02.nc4 dir.0024/atms_n20_02.nc4 dir.0025/atms_n20_02.nc4 dir.0026/atms_n20_02.nc4 dir.0027/atms_n20_02.nc4 dir.0028/atms_n20_02.nc4 dir.0029/atms_n20_02.nc4 dir.0035/atms_n20_02.nc4 dir.0036/atms_n20_02.nc4 dir.0037/atms_n20_02.nc4 dir.0038/atms_n20_02.nc4 dir.0039/atms_n20_02.nc4 dir.0048/atms_n20_02.nc4 dir.0049/atms_n20_02.nc4 dir.0058/atms_n20_02.nc4 dir.0059/atms_n20_02.nc4 dir.0066/atms_n20_02.nc4 dir.0067/atms_n20_02.nc4 dir.0068/atms_n20_02.nc4 dir.0069/atms_n20_02.nc4 dir.0071/atms_n20_02.nc4 dir.0072/atms_n20_02.nc4 dir.0073/atms_n20_02.nc4 dir.0074/atms_n20_02.nc4 dir.0075/atms_n20_02.nc4 dir.0076/atms_n20_02.nc4 dir.0077/atms_n20_02.nc4 dir.0078/atms_n20_02.nc4 dir.0079/atms_n20_02.nc4 dir.0080/atms_n20_02.nc4 dir.0081/atms_n20_02.nc4 dir.0082/atms_n20_02.nc4 dir.0083/atms_n20_02.nc4 dir.0084/atms_n20_02.nc4 dir.0085/atms_n20_02.nc4 dir.0086/atms_n20_02.nc4 dir.0087/atms_n20_02.nc4 dir.0088/atms_n20_02.nc4 dir.0089/atms_n20_02.nc4 dir.0090/atms_n20_02.nc4 dir.0091/atms_n20_02.nc4 dir.0092/atms_n20_02.nc4 dir.0093/atms_n20_02.nc4 dir.0094/atms_n20_02.nc4 dir.0095/atms_n20_02.nc4 dir.0096/atms_n20_02.nc4 dir.0097/atms_n20_02.nc4 dir.0098/atms_n20_02.nc4 dir.0099/atms_n20_02.nc4 dir.0100/atms_n20_02.nc4 dir.0101/atms_n20_02.nc4 dir.0102/atms_n20_02.nc4 dir.0103/atms_n20_02.nc4 dir.0104/atms_n20_02.nc4 dir.0105/atms_n20_02.nc4 dir.0106/atms_n20_02.nc4 dir.0107/atms_n20_02.nc4 dir.0108/atms_n20_02.nc4 dir.0109/atms_n20_02.nc4 dir.0110/atms_n20_02.nc4 dir.0111/atms_n20_02.nc4 dir.0112/atms_n20_02.nc4 dir.0113/atms_n20_02.nc4 dir.0114/atms_n20_02.nc4 dir.0115/atms_n20_02.nc4 dir.0116/atms_n20_02.nc4 dir.0117/atms_n20_02.nc4 dir.0118/atms_n20_02.nc4 dir.0119/atms_n20_02.nc4 dir.0124/atms_n20_02.nc4 dir.0125/atms_n20_02.nc4 dir.0133/atms_n20_02.nc4 dir.0134/atms_n20_02.nc4 dir.0142/atms_n20_02.nc4 dir.0143/atms_n20_02.nc4 dir.0144/atms_n20_02.nc4 dir.0147/atms_n20_02.nc4 dir.0148/atms_n20_02.nc4 dir.0149/atms_n20_02.nc4 dir.0151/atms_n20_02.nc4 dir.0152/atms_n20_02.nc4 dir.0153/atms_n20_02.nc4 dir.0154/atms_n20_02.nc4 dir.0155/atms_n20_02.nc4 dir.0156/atms_n20_02.nc4 dir.0157/atms_n20_02.nc4 dir.0158/atms_n20_02.nc4 dir.0159/atms_n20_02.nc4
++ count=111
++ '[' 111 -gt 1 ']'
++ '[' = YES ']'
+/var/spool/slurmd/job9170886/slurm_script: line 1055: [: =: unary operator expected
++ cat dir.0000/atms_n20_02.nc4 dir.0001/atms_n20_02.nc4 dir.0002/atms_n20_02.nc4 dir.0003/atms_n20_02.nc4 dir.0004/atms_n20_02.nc4 dir.0005/atms_n20_02.nc4 dir.0006/atms_n20_02.nc4 dir.0007/atms_n20_02.nc4 dir.0008/atms_n20_02.nc4 dir.0009/atms_n20_02.nc4 dir.0010/atms_n20_02.nc4 dir.0011/atms_n20_02.nc4 dir.0012/atms_n20_02.nc4 dir.0013/atms_n20_02.nc4 dir.0014/atms_n20_02.nc4 dir.0015/atms_n20_02.nc4 dir.0016/atms_n20_02.nc4 dir.0017/atms_n20_02.nc4 dir.0018/atms_n20_02.nc4 dir.0019/atms_n20_02.nc4 dir.0020/atms_n20_02.nc4 dir.0021/atms_n20_02.nc4 dir.0022/atms_n20_02.nc4 dir.0023/atms_n20_02.nc4 dir.0024/atms_n20_02.nc4 dir.0025/atms_n20_02.nc4 dir.0026/atms_n20_02.nc4 dir.0027/atms_n20_02.nc4 dir.0028/atms_n20_02.nc4 dir.0029/atms_n20_02.nc4 dir.0035/atms_n20_02.nc4 dir.0036/atms_n20_02.nc4 dir.0037/atms_n20_02.nc4 dir.0038/atms_n20_02.nc4 dir.0039/atms_n20_02.nc4 dir.0048/atms_n20_02.nc4 dir.0049/atms_n20_02.nc4 dir.0058/atms_n20_02.nc4 dir.0059/atms_n20_02.nc4 dir.0066/atms_n20_02.nc4 dir.0067/atms_n20_02.nc4 dir.0068/atms_n20_02.nc4 dir.0069/atms_n20_02.nc4 dir.0071/atms_n20_02.nc4 dir.0072/atms_n20_02.nc4 dir.0073/atms_n20_02.nc4 dir.0074/atms_n20_02.nc4 dir.0075/atms_n20_02.nc4 dir.0076/atms_n20_02.nc4 dir.0077/atms_n20_02.nc4 dir.0078/atms_n20_02.nc4 dir.0079/atms_n20_02.nc4 dir.0080/atms_n20_02.nc4 dir.0081/atms_n20_02.nc4 dir.0082/atms_n20_02.nc4 dir.0083/atms_n20_02.nc4 dir.0084/atms_n20_02.nc4 dir.0085/atms_n20_02.nc4 dir.0086/atms_n20_02.nc4 dir.0087/atms_n20_02.nc4 dir.0088/atms_n20_02.nc4 dir.0089/atms_n20_02.nc4 dir.0090/atms_n20_02.nc4 dir.0091/atms_n20_02.nc4 dir.0092/atms_n20_02.nc4 dir.0093/atms_n20_02.nc4 dir.0094/atms_n20_02.nc4 dir.0095/atms_n20_02.nc4 dir.0096/atms_n20_02.nc4 dir.0097/atms_n20_02.nc4 dir.0098/atms_n20_02.nc4 dir.0099/atms_n20_02.nc4 dir.0100/atms_n20_02.nc4 dir.0101/atms_n20_02.nc4 dir.0102/atms_n20_02.nc4 dir.0103/atms_n20_02.nc4 dir.0104/atms_n20_02.nc4 dir.0105/atms_n20_02.nc4 dir.0106/atms_n20_02.nc4 dir.0107/atms_n20_02.nc4 dir.0108/atms_n20_02.nc4 dir.0109/atms_n20_02.nc4 dir.0110/atms_n20_02.nc4 dir.0111/atms_n20_02.nc4 dir.0112/atms_n20_02.nc4 dir.0113/atms_n20_02.nc4 dir.0114/atms_n20_02.nc4 dir.0115/atms_n20_02.nc4 dir.0116/atms_n20_02.nc4 dir.0117/atms_n20_02.nc4 dir.0118/atms_n20_02.nc4 dir.0119/atms_n20_02.nc4 dir.0124/atms_n20_02.nc4 dir.0125/atms_n20_02.nc4 dir.0133/atms_n20_02.nc4 dir.0134/atms_n20_02.nc4 dir.0142/atms_n20_02.nc4 dir.0143/atms_n20_02.nc4 dir.0144/atms_n20_02.nc4 dir.0147/atms_n20_02.nc4 dir.0148/atms_n20_02.nc4 dir.0149/atms_n20_02.nc4 dir.0151/atms_n20_02.nc4 dir.0152/atms_n20_02.nc4 dir.0153/atms_n20_02.nc4 dir.0154/atms_n20_02.nc4 dir.0155/atms_n20_02.nc4 dir.0156/atms_n20_02.nc4 dir.0157/atms_n20_02.nc4 dir.0158/atms_n20_02.nc4 dir.0159/atms_n20_02.nc4
++ echo 'diag_atms_n20_02.2026061000*'
+++ expr 1 + 1
++ numfile[n]=2
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/atms_n21_02*'
+ls: cannot access 'dir.*/atms_n21_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/hirs4_metop-b_02*'
+ls: cannot access 'dir.*/hirs4_metop-b_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsua_metop-b_02*'
+ls: cannot access 'dir.*/amsua_metop-b_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/mhs_metop-b_02*'
+ls: cannot access 'dir.*/mhs_metop-b_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/iasi_metop-b_02*'
+ls: cannot access 'dir.*/iasi_metop-b_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/avhrr_metop-b_02*'
+ls: cannot access 'dir.*/avhrr_metop-b_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/avhrr_n18_02*'
+ls: cannot access 'dir.*/avhrr_n18_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/avhrr_n19_02*'
+ls: cannot access 'dir.*/avhrr_n19_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/avhrr_metop-a_02*'
+ls: cannot access 'dir.*/avhrr_metop-a_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsr2_gcom-w1_02*'
+ls: cannot access 'dir.*/amsr2_gcom-w1_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/gmi_gpm_02*'
+ls: cannot access 'dir.*/gmi_gpm_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/saphir_meghat_02*'
+ls: cannot access 'dir.*/saphir_meghat_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ahi_himawari8_02*'
+ls: cannot access 'dir.*/ahi_himawari8_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ahi_himawari9_02*'
+ls: cannot access 'dir.*/ahi_himawari9_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/abi_g16_02*'
+ls: cannot access 'dir.*/abi_g16_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/abi_g17_02*'
+ls: cannot access 'dir.*/abi_g17_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/abi_g18_02*'
+ls: cannot access 'dir.*/abi_g18_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/abi_g19_02*'
+ls: cannot access 'dir.*/abi_g19_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsua_metop-c_02*'
+ls: cannot access 'dir.*/amsua_metop-c_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/mhs_metop-c_02*'
+ls: cannot access 'dir.*/mhs_metop-c_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/iasi_metop-c_02*'
+ls: cannot access 'dir.*/iasi_metop-c_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/avhrr_metop-c_02*'
+ls: cannot access 'dir.*/avhrr_metop-c_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/viirs-m_j1_02*'
+ls: cannot access 'dir.*/viirs-m_j1_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/viirs-m_j2_02*'
+ls: cannot access 'dir.*/viirs-m_j2_02*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ '[' 4 -le 3 ']'
+++ date
++ echo Fri Jun 26 08:15:13 CDT 2026 END loop 02
+Fri Jun 26 08:15:13 CDT 2026 END loop 02
++ for loop in $loops
++ case $loop in
++ string=anl
+++ date
++ echo Fri Jun 26 08:15:13 CDT 2026 START loop anl
+Fri Jun 26 08:15:13 CDT 2026 START loop anl
++ n=-1
++ '[' 0 -le 3 ']'
+++ echo conv conv_gps conv_ps conv_pw conv_q conv_sst conv_t conv_tcp conv_uv conv_spd
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/conv_03*'
+ls: cannot access 'dir.*/conv_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/conv_gps_03*'
+ls: cannot access 'dir.*/conv_gps_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/conv_ps_03*'
+ls: cannot access 'dir.*/conv_ps_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/conv_pw_03*'
+ls: cannot access 'dir.*/conv_pw_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/conv_q_03*'
+ls: cannot access 'dir.*/conv_q_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/conv_sst_03*'
+ls: cannot access 'dir.*/conv_sst_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/conv_t_03*'
+ls: cannot access 'dir.*/conv_t_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/conv_tcp_03*'
+ls: cannot access 'dir.*/conv_tcp_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/conv_uv_03*'
+ls: cannot access 'dir.*/conv_uv_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/conv_spd_03*'
+ls: cannot access 'dir.*/conv_spd_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ '[' 1 -le 3 ']'
+++ echo pcp_ssmi_dmsp pcp_tmi_trmm
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/pcp_ssmi_dmsp_03*'
+ls: cannot access 'dir.*/pcp_ssmi_dmsp_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/pcp_tmi_trmm_03*'
+ls: cannot access 'dir.*/pcp_tmi_trmm_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ '[' 2 -le 3 ']'
+++ echo sbuv2_n16 sbuv2_n17 sbuv2_n18 sbuv2_n19 gome_metop-a gome_metop-b gome_metop-c omi_aura mls30_aura ompsnp_npp ompstc8_npp ompslp_npp ompsnp_n20 ompstc8_n20 ompslp_n20 ompsnp_n21 ompstc8_n21 ompslp_n21
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sbuv2_n16_03*'
+ls: cannot access 'dir.*/sbuv2_n16_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sbuv2_n17_03*'
+ls: cannot access 'dir.*/sbuv2_n17_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sbuv2_n18_03*'
+ls: cannot access 'dir.*/sbuv2_n18_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sbuv2_n19_03*'
+ls: cannot access 'dir.*/sbuv2_n19_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/gome_metop-a_03*'
+ls: cannot access 'dir.*/gome_metop-a_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/gome_metop-b_03*'
+ls: cannot access 'dir.*/gome_metop-b_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/gome_metop-c_03*'
+ls: cannot access 'dir.*/gome_metop-c_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/omi_aura_03*'
+ls: cannot access 'dir.*/omi_aura_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/mls30_aura_03*'
+ls: cannot access 'dir.*/mls30_aura_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ompsnp_npp_03*'
+ls: cannot access 'dir.*/ompsnp_npp_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ompstc8_npp_03*'
+ls: cannot access 'dir.*/ompstc8_npp_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ompslp_npp_03*'
+ls: cannot access 'dir.*/ompslp_npp_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ompsnp_n20_03*'
+ls: cannot access 'dir.*/ompsnp_n20_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ompstc8_n20_03*'
+ls: cannot access 'dir.*/ompstc8_n20_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ompslp_n20_03*'
+ls: cannot access 'dir.*/ompslp_n20_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ompsnp_n21_03*'
+ls: cannot access 'dir.*/ompsnp_n21_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ompstc8_n21_03*'
+ls: cannot access 'dir.*/ompstc8_n21_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ompslp_n21_03*'
+ls: cannot access 'dir.*/ompslp_n21_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ '[' 3 -le 3 ']'
+++ echo hirs2_n14 msu_n14 sndr_g08 sndr_g11 sndr_g12 sndr_g13 sndr_g08_prep sndr_g11_prep sndr_g12_prep sndr_g13_prep sndrd1_g11 sndrd2_g11 sndrd3_g11 sndrd4_g11 sndrd1_g12 sndrd2_g12 sndrd3_g12 sndrd4_g12 sndrd1_g13 sndrd2_g13 sndrd3_g13 sndrd4_g13 sndrd1_g14 sndrd2_g14 sndrd3_g14 sndrd4_g14 sndrd1_g15 sndrd2_g15 sndrd3_g15 sndrd4_g15 hirs3_n15 hirs3_n16 hirs3_n17 amsua_n15 amsua_n16 amsua_n17 amsub_n15 amsub_n16 amsub_n17 hsb_aqua airs_aqua amsua_aqua imgr_g08 imgr_g11 imgr_g12 imgr_g14 imgr_g15 ssmi_f13 ssmi_f15 hirs4_n18 hirs4_metop-a amsua_n18 amsua_metop-a mhs_n18 mhs_metop-a amsre_low_aqua amsre_mid_aqua amsre_hig_aqua ssmis_f16 ssmis_f17 ssmis_f18 ssmis_f19 ssmis_f20 iasi_metop-a hirs4_n19 amsua_n19 mhs_n19 seviri_m08 seviri_m09 seviri_m10 seviri_m11 cris_npp cris-fsr_npp cris-fsr_n20 cris-fsr_n21 atms_npp atms_n20 atms_n21 hirs4_metop-b amsua_metop-b mhs_metop-b iasi_metop-b avhrr_metop-b avhrr_n18 avhrr_n19 avhrr_metop-a amsr2_gcom-w1 gmi_gpm saphir_meghat ahi_himawari8 ahi_himawari9 abi_g16 abi_g17 abi_g18 abi_g19 amsua_metop-c mhs_metop-c iasi_metop-c avhrr_metop-c viirs-m_j1 viirs-m_j2
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/hirs2_n14_03*'
+ls: cannot access 'dir.*/hirs2_n14_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/msu_n14_03*'
+ls: cannot access 'dir.*/msu_n14_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndr_g08_03*'
+ls: cannot access 'dir.*/sndr_g08_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndr_g11_03*'
+ls: cannot access 'dir.*/sndr_g11_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndr_g12_03*'
+ls: cannot access 'dir.*/sndr_g12_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndr_g13_03*'
+ls: cannot access 'dir.*/sndr_g13_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndr_g08_prep_03*'
+ls: cannot access 'dir.*/sndr_g08_prep_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndr_g11_prep_03*'
+ls: cannot access 'dir.*/sndr_g11_prep_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndr_g12_prep_03*'
+ls: cannot access 'dir.*/sndr_g12_prep_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndr_g13_prep_03*'
+ls: cannot access 'dir.*/sndr_g13_prep_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd1_g11_03*'
+ls: cannot access 'dir.*/sndrd1_g11_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd2_g11_03*'
+ls: cannot access 'dir.*/sndrd2_g11_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd3_g11_03*'
+ls: cannot access 'dir.*/sndrd3_g11_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd4_g11_03*'
+ls: cannot access 'dir.*/sndrd4_g11_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd1_g12_03*'
+ls: cannot access 'dir.*/sndrd1_g12_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd2_g12_03*'
+ls: cannot access 'dir.*/sndrd2_g12_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd3_g12_03*'
+ls: cannot access 'dir.*/sndrd3_g12_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd4_g12_03*'
+ls: cannot access 'dir.*/sndrd4_g12_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd1_g13_03*'
+ls: cannot access 'dir.*/sndrd1_g13_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd2_g13_03*'
+ls: cannot access 'dir.*/sndrd2_g13_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd3_g13_03*'
+ls: cannot access 'dir.*/sndrd3_g13_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd4_g13_03*'
+ls: cannot access 'dir.*/sndrd4_g13_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd1_g14_03*'
+ls: cannot access 'dir.*/sndrd1_g14_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd2_g14_03*'
+ls: cannot access 'dir.*/sndrd2_g14_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd3_g14_03*'
+ls: cannot access 'dir.*/sndrd3_g14_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd4_g14_03*'
+ls: cannot access 'dir.*/sndrd4_g14_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd1_g15_03*'
+ls: cannot access 'dir.*/sndrd1_g15_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd2_g15_03*'
+ls: cannot access 'dir.*/sndrd2_g15_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd3_g15_03*'
+ls: cannot access 'dir.*/sndrd3_g15_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/sndrd4_g15_03*'
+ls: cannot access 'dir.*/sndrd4_g15_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/hirs3_n15_03*'
+ls: cannot access 'dir.*/hirs3_n15_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/hirs3_n16_03*'
+ls: cannot access 'dir.*/hirs3_n16_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/hirs3_n17_03*'
+ls: cannot access 'dir.*/hirs3_n17_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsua_n15_03*'
+ls: cannot access 'dir.*/amsua_n15_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsua_n16_03*'
+ls: cannot access 'dir.*/amsua_n16_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsua_n17_03*'
+ls: cannot access 'dir.*/amsua_n17_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsub_n15_03*'
+ls: cannot access 'dir.*/amsub_n15_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsub_n16_03*'
+ls: cannot access 'dir.*/amsub_n16_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsub_n17_03*'
+ls: cannot access 'dir.*/amsub_n17_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/hsb_aqua_03*'
+ls: cannot access 'dir.*/hsb_aqua_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/airs_aqua_03*'
+ls: cannot access 'dir.*/airs_aqua_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsua_aqua_03*'
+ls: cannot access 'dir.*/amsua_aqua_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/imgr_g08_03*'
+ls: cannot access 'dir.*/imgr_g08_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/imgr_g11_03*'
+ls: cannot access 'dir.*/imgr_g11_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/imgr_g12_03*'
+ls: cannot access 'dir.*/imgr_g12_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/imgr_g14_03*'
+ls: cannot access 'dir.*/imgr_g14_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/imgr_g15_03*'
+ls: cannot access 'dir.*/imgr_g15_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ssmi_f13_03*'
+ls: cannot access 'dir.*/ssmi_f13_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ssmi_f15_03*'
+ls: cannot access 'dir.*/ssmi_f15_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/hirs4_n18_03*'
+ls: cannot access 'dir.*/hirs4_n18_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/hirs4_metop-a_03*'
+ls: cannot access 'dir.*/hirs4_metop-a_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsua_n18_03*'
+ls: cannot access 'dir.*/amsua_n18_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsua_metop-a_03*'
+ls: cannot access 'dir.*/amsua_metop-a_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/mhs_n18_03*'
+ls: cannot access 'dir.*/mhs_n18_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/mhs_metop-a_03*'
+ls: cannot access 'dir.*/mhs_metop-a_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsre_low_aqua_03*'
+ls: cannot access 'dir.*/amsre_low_aqua_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsre_mid_aqua_03*'
+ls: cannot access 'dir.*/amsre_mid_aqua_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsre_hig_aqua_03*'
+ls: cannot access 'dir.*/amsre_hig_aqua_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ssmis_f16_03*'
+ls: cannot access 'dir.*/ssmis_f16_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ssmis_f17_03*'
+ls: cannot access 'dir.*/ssmis_f17_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ssmis_f18_03*'
+ls: cannot access 'dir.*/ssmis_f18_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ssmis_f19_03*'
+ls: cannot access 'dir.*/ssmis_f19_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ssmis_f20_03*'
+ls: cannot access 'dir.*/ssmis_f20_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/iasi_metop-a_03*'
+ls: cannot access 'dir.*/iasi_metop-a_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/hirs4_n19_03*'
+ls: cannot access 'dir.*/hirs4_n19_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsua_n19_03*'
+ls: cannot access 'dir.*/amsua_n19_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/mhs_n19_03*'
+ls: cannot access 'dir.*/mhs_n19_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/seviri_m08_03*'
+ls: cannot access 'dir.*/seviri_m08_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/seviri_m09_03*'
+ls: cannot access 'dir.*/seviri_m09_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/seviri_m10_03*'
+ls: cannot access 'dir.*/seviri_m10_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/seviri_m11_03*'
+ls: cannot access 'dir.*/seviri_m11_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/cris_npp_03*'
+ls: cannot access 'dir.*/cris_npp_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/cris-fsr_npp_03*'
+ls: cannot access 'dir.*/cris-fsr_npp_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/cris-fsr_n20_03*'
+ls: cannot access 'dir.*/cris-fsr_n20_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/cris-fsr_n21_03*'
+ls: cannot access 'dir.*/cris-fsr_n21_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/atms_npp_03*'
+ls: cannot access 'dir.*/atms_npp_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/atms_n20_03*'
+ls: cannot access 'dir.*/atms_n20_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/atms_n21_03*'
+ls: cannot access 'dir.*/atms_n21_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/hirs4_metop-b_03*'
+ls: cannot access 'dir.*/hirs4_metop-b_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsua_metop-b_03*'
+ls: cannot access 'dir.*/amsua_metop-b_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/mhs_metop-b_03*'
+ls: cannot access 'dir.*/mhs_metop-b_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/iasi_metop-b_03*'
+ls: cannot access 'dir.*/iasi_metop-b_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/avhrr_metop-b_03*'
+ls: cannot access 'dir.*/avhrr_metop-b_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/avhrr_n18_03*'
+ls: cannot access 'dir.*/avhrr_n18_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/avhrr_n19_03*'
+ls: cannot access 'dir.*/avhrr_n19_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/avhrr_metop-a_03*'
+ls: cannot access 'dir.*/avhrr_metop-a_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsr2_gcom-w1_03*'
+ls: cannot access 'dir.*/amsr2_gcom-w1_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/gmi_gpm_03*'
+ls: cannot access 'dir.*/gmi_gpm_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/saphir_meghat_03*'
+ls: cannot access 'dir.*/saphir_meghat_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ahi_himawari8_03*'
+ls: cannot access 'dir.*/ahi_himawari8_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/ahi_himawari9_03*'
+ls: cannot access 'dir.*/ahi_himawari9_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/abi_g16_03*'
+ls: cannot access 'dir.*/abi_g16_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/abi_g17_03*'
+ls: cannot access 'dir.*/abi_g17_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/abi_g18_03*'
+ls: cannot access 'dir.*/abi_g18_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/abi_g19_03*'
+ls: cannot access 'dir.*/abi_g19_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/amsua_metop-c_03*'
+ls: cannot access 'dir.*/amsua_metop-c_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/mhs_metop-c_03*'
+ls: cannot access 'dir.*/mhs_metop-c_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/iasi_metop-c_03*'
+ls: cannot access 'dir.*/iasi_metop-c_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/avhrr_metop-c_03*'
+ls: cannot access 'dir.*/avhrr_metop-c_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/viirs-m_j1_03*'
+ls: cannot access 'dir.*/viirs-m_j1_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ for type in $(echo ${diagtype[n]})
+++ wc -l
+++ ls 'dir.*/viirs-m_j2_03*'
+ls: cannot access 'dir.*/viirs-m_j2_03*': No such file or directory
++ count=0
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ '[' 4 -le 3 ']'
+++ date
++ echo Fri Jun 26 08:15:17 CDT 2026 END loop anl
+Fri Jun 26 08:15:17 CDT 2026 END loop anl
++ cd ./
++ '[' YES = YES -a = NO ']'
+/var/spool/slurmd/job9170886/slurm_script: line 1076: [: too many arguments
++ '[' = YES ']'
+/var/spool/slurmd/job9170886/slurm_script: line 1084: [: =: unary operator expected
++ '[' YES = YES ']'
+++ date
++ echo Fri Jun 26 08:15:17 CDT 2026 START tar diagnostic files
+Fri Jun 26 08:15:17 CDT 2026 START tar diagnostic files
++ n=-1
++ '[' 0 -le 3 ']'
++ TAROPTS=-uvf
++ '[' '!' -s /work/noaa/stmp/dsuralik/out_gsi/test.2026061000/cnvstat.gdas.2026061000 ']'
++ TAROPTS=-cvf
++ '[' 0 -gt 0 ']'
++ '[' 1 -le 3 ']'
++ TAROPTS=-uvf
++ '[' '!' -s /work/noaa/stmp/dsuralik/out_gsi/test.2026061000/pcpstat.gdas.2026061000 ']'
++ TAROPTS=-cvf
++ '[' 0 -gt 0 ']'
++ '[' 2 -le 3 ']'
++ TAROPTS=-uvf
++ '[' '!' -s /work/noaa/stmp/dsuralik/out_gsi/test.2026061000/oznstat.gdas.2026061000 ']'
++ TAROPTS=-cvf
++ '[' 0 -gt 0 ']'
++ '[' 3 -le 3 ']'
++ TAROPTS=-uvf
++ '[' '!' -s /work/noaa/stmp/dsuralik/out_gsi/test.2026061000/radstat.gdas.2026061000 ']'
++ TAROPTS=-cvf
++ '[' 2 -gt 0 ']'
+++ cat listrad
++ tar -cvf /work/noaa/stmp/dsuralik/out_gsi/test.2026061000/radstat.gdas.2026061000 diag_atms_n20_ges.2026061000.nc4 diag_atms_n20_02.2026061000.nc4
+diag_atms_n20_ges.2026061000.nc4
+diag_atms_n20_02.2026061000.nc4
++ '[' 4 -le 3 ']'
++ chmod 750 /work/noaa/stmp/dsuralik/out_gsi/test.2026061000/cnvstat.gdas.2026061000
+chmod: cannot access '/work/noaa/stmp/dsuralik/out_gsi/test.2026061000/cnvstat.gdas.2026061000': No such file or directory
++ chgrp rstprod /work/noaa/stmp/dsuralik/out_gsi/test.2026061000/cnvstat.gdas.2026061000
+chgrp: cannot access '/work/noaa/stmp/dsuralik/out_gsi/test.2026061000/cnvstat.gdas.2026061000': No such file or directory
++ chmod 750 /work/noaa/stmp/dsuralik/out_gsi/test.2026061000/radstat.gdas.2026061000
++ chgrp rstprod /work/noaa/stmp/dsuralik/out_gsi/test.2026061000/radstat.gdas.2026061000
+++ date
++ echo Fri Jun 26 08:15:17 CDT 2026 END tar diagnostic files
+Fri Jun 26 08:15:17 CDT 2026 END tar diagnostic files
+++ date
++ echo 'after GENDIAG= YES at Fri Jun 26 08:15:17 CDT 2026'
+after GENDIAG= YES at Fri Jun 26 08:15:17 CDT 2026
++ [[ NO = \Y\E\S ]]
++ date
+Fri Jun 26 08:15:17 CDT 2026
++ exit
